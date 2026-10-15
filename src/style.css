@@ -94,9 +94,3 @@ td { padding: 6px 8px; border-bottom: 1px solid var(--rule); }
 .loading { color: var(--ink-muted); font: 12px var(--font-data); }
 .error { color: var(--bad); }
 footer { font: 12px/1.5 var(--font-data); color: var(--ink-muted); border-top: 1px solid var(--rule); padding-top: 12px; }
-
-.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; }
-.project { background: var(--sheet); border: 1px solid var(--rule); padding: 20px; display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: inherit; }
-.project:hover { border-color: var(--ink); }
-.project strong { font: 700 20px/1.2 var(--font-display); }
-.project span { color: var(--ink-muted); font-size: 13px; }

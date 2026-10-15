@@ -2,7 +2,8 @@
 
 Delivery numbers for the projects Upcode builds, as a static site on GitHub Pages.
 
-- `/` lists the projects.
+- `/` is a bare landing page; it deliberately does not list or link to projects, so each
+  project page is only reachable by its own link.
 - `/cinderblock/` shows Cinderblock Mobile: builds, merged MRs, commits, churn and code size.
 
 Only aggregate numbers are published; no names or per-person figures.
