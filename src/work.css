@@ -85,3 +85,4 @@ a.talk:hover { border-color: var(--teal); }
 .work-card .case-link { font: 500 13px/1 var(--font-mono); color: var(--teal); margin-top: auto; }
 a.brand, .work-card .case-link { text-decoration: none; }
 .work-card .case-link:hover { text-decoration: underline; }
+.origin { margin: 0; max-width: 72ch; color: var(--muted); font-size: 15px; line-height: 1.6; border-left: 2px solid var(--teal); padding-left: 16px; }
