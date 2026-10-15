@@ -10,3 +10,16 @@
 .work-card .tag { font: 500 11px/1 var(--font-mono); padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); color: var(--text); background: rgba(10, 15, 20, 0.5); }
 .work-card .tag.platform { color: var(--teal); border-color: rgba(31, 209, 174, 0.3); }
 .work-card.current { border-color: rgba(31, 209, 174, 0.45); box-shadow: 0 0 32px rgba(31, 209, 174, 0.08); }
+.work-card .kind.design { color: #ffb547; }
+.design-band { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;
+  display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 28px; }
+@media (max-width: 760px) { .design-band { grid-template-columns: 1fr; } }
+.design-copy h3 { font: 800 28px/1.15 var(--font-sans); letter-spacing: -1px; margin: 0 0 10px; text-wrap: balance; }
+.design-copy p { margin: 0 0 14px; color: var(--muted); max-width: 60ch; }
+.design-list { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.design-list li { font: 500 12px/1 var(--font-mono); padding: 8px 10px; border-radius: 6px; border: 1px solid rgba(31, 209, 174, 0.3); color: var(--teal); }
+.design-links { display: flex; flex-direction: column; gap: 10px; }
+.design-link { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px;
+  color: var(--text); text-decoration: none; background: rgba(10, 15, 20, 0.5); }
+.design-link:hover { border-color: var(--teal); }
+.design-link .kind { font: 500 11px/1 var(--font-mono); letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }

@@ -17,7 +17,7 @@ function el(tag, className, text) {
 function card(project) {
   const article = el('article', `work-card${project.years[1] ? '' : ' current'}`);
   const top = el('div', 'top');
-  top.append(el('span', 'kind', project.kind), el('span', 'years', yearsLabel(project.years)));
+  top.append(el('span', `kind${project.design ? ' design' : ''}`, project.kind), el('span', 'years', yearsLabel(project.years)));
   const tags = el('div', 'tags');
   for (const p of project.platforms) tags.append(el('span', 'tag platform', p));
   for (const s of project.stack) tags.append(el('span', 'tag', s));
