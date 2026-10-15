@@ -345,24 +345,27 @@
   "kind": "B2B app"
  },
  {
-  "title": "App for an industrial hydraulics manufacturer",
-  "summary": "A mobile app for an industrial manufacturer's products.",
+  "title": "Configurator for industrial control electronics",
+  "summary": "A Windows and Android app for a hydraulics manufacturer’s control boards: set and read parameters, stream live values and record signals into charts, talking to the hardware over USB serial and Bluetooth LE with Protobuf messages.",
   "platforms": [
-   "iOS",
+   "Windows",
    "Android"
   ],
   "stack": [
-   "Flutter"
+   "Flutter",
+   "Protobuf",
+   "Bluetooth LE",
+   "USB serial"
   ],
   "years": [
    2021,
    2021
   ],
-  "kind": "Enterprise app"
+  "kind": "Industrial"
  },
  {
-  "title": "Consumer app with API and web tooling",
-  "summary": "A mobile app with its API, shared packages, web tooling and CI.",
+  "title": "Chat & campaigns app with a gRPC backend",
+  "summary": "A consumer chat app with paid campaigns, in-app coins and moderation, backed by a gRPC API on Cloud Run, Firebase, an admin web tool and its own CI.",
   "platforms": [
    "iOS",
    "Android",
@@ -370,11 +373,30 @@
   ],
   "stack": [
    "Flutter",
-   "Dart"
+   "Dart",
+   "Firebase",
+   "gRPC"
   ],
   "years": [
    2019,
    2021
+  ],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Comic reader app",
+  "summary": "A comic-book reading app for iOS and Android, built on a gRPC API and shipped to the App Store.",
+  "platforms": [
+   "iOS",
+   "Android"
+  ],
+  "stack": [
+   "Flutter",
+   "gRPC"
+  ],
+  "years": [
+   2020,
+   2020
   ],
   "kind": "Consumer app"
  }
