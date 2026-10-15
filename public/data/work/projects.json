@@ -19,11 +19,12 @@
    2022,
    null
   ],
-  "kind": "Product"
+  "kind": "Product",
+  "shot": "field-service"
  },
  {
-  "title": "Security patrol & monitoring platform",
-  "summary": "Mobile apps for guards and supervisors with offline maps and sync, plus the backend and the web control room.",
+  "title": "Infrastructure monitoring platform",
+  "summary": "Monitoring for railways and dams: mobile apps for field teams and inspectors with offline maps and sync, plus the backend and the web control room.",
   "platforms": [
    "iOS",
    "Android",
@@ -41,7 +42,28 @@
    2019,
    2024
   ],
-  "kind": "Platform"
+  "kind": "Platform",
+  "shot": "infrastructure"
+ },
+ {
+  "title": "City issue tracking for councils",
+  "summary": "A patrol app that helps city councils find, log and follow up issues across the city, with maps and offline sync for teams in the field.",
+  "platforms": [
+   "iOS",
+   "Android"
+  ],
+  "stack": [
+   "Flutter",
+   "Redux",
+   "Drift",
+   "Firebase"
+  ],
+  "years": [
+   2024,
+   2024
+  ],
+  "kind": "Public sector",
+  "shot": "city"
  },
  {
   "title": "Athlete training & team performance platform",
@@ -59,7 +81,8 @@
    2019,
    2024
   ],
-  "kind": "Platform"
+  "kind": "Platform",
+  "shot": "athlete"
  },
  {
   "title": "Nutrition & diet-tracking app",
@@ -76,7 +99,8 @@
    2022,
    2022
   ],
-  "kind": "Consumer app"
+  "kind": "Consumer app",
+  "shot": "nutrition"
  },
  {
   "title": "Offline companion for technical documentation",
@@ -269,7 +293,8 @@
    2021
   ],
   "kind": "Design + build",
-  "design": true
+  "design": true,
+  "shot": "knowledge"
  },
  {
   "title": "Ride-hailing apps",

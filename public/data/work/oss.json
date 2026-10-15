@@ -1,0 +1,75 @@
+{
+ "updated": "2026-10-16",
+ "repos": [
+  {
+   "name": "SpaceTabLayout",
+   "url": "https://github.com/long1eu/SpaceTabLayout",
+   "stars": 1588,
+   "forks": 265,
+   "language": "Java",
+   "summary": "An Android tab layout with a floating centre action button."
+  },
+  {
+   "name": "flutter_i18n",
+   "url": "https://github.com/long1eu/flutter_i18n",
+   "stars": 248,
+   "forks": 51,
+   "language": "Dart",
+   "summary": "Binds .arb translations to Flutter apps, with an IntelliJ / Android Studio plugin."
+  },
+  {
+   "name": "rich_editor",
+   "url": "https://github.com/long1eu/rich_editor",
+   "stars": 134,
+   "forks": 30,
+   "language": "Dart",
+   "summary": "A rich text editor for Flutter."
+  },
+  {
+   "name": "material_pickers",
+   "url": "https://github.com/long1eu/material_pickers",
+   "stars": 104,
+   "forks": 13,
+   "language": "Dart",
+   "summary": "Material date and time pickers for Flutter."
+  },
+  {
+   "name": "firebase_dart_sdk",
+   "url": "https://github.com/long1eu/firebase_dart_sdk",
+   "stars": 80,
+   "forks": 20,
+   "language": "Dart",
+   "summary": "An unofficial pure-Dart Firebase SDK: Firestore and Auth ported to Dart."
+  },
+  {
+   "name": "google_sign_in_dart",
+   "url": "https://github.com/long1eu/google_sign_in_dart",
+   "stars": 18,
+   "forks": 20,
+   "language": "Dart",
+   "summary": "Google Sign-In for Dart on desktop platforms."
+  }
+ ],
+ "upstream": [
+  {
+   "project": "freezed",
+   "url": "https://github.com/rrousselGit/freezed/commits?author=long1eu",
+   "commits": 9
+  },
+  {
+   "project": "Flutter plugins & packages",
+   "url": "https://github.com/flutter/packages/commits?author=long1eu",
+   "commits": 5
+  },
+  {
+   "project": "FlutterFire",
+   "url": "https://github.com/firebase/flutterfire/commits?author=long1eu",
+   "commits": 4
+  },
+  {
+   "project": "Flutter framework",
+   "url": "https://github.com/flutter/flutter/commits?author=long1eu",
+   "commits": 1
+  }
+ ]
+}

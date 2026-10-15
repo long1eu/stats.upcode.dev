@@ -16,6 +16,17 @@ function el(tag, className, text) {
 
 function card(project) {
   const article = el('article', `work-card${project.years[1] ? '' : ' current'}`);
+  if (project.shot) {
+    const shot = el('div', 'shot');
+    const img = el('img');
+    img.src = `/work/shots/${project.shot}.png`;
+    img.alt = `Illustration of the ${project.title.toLowerCase()} screens`;
+    img.loading = 'lazy';
+    img.width = 1200;
+    img.height = 750;
+    shot.append(img);
+    article.append(shot);
+  }
   const top = el('div', 'top');
   top.append(el('span', `kind${project.design ? ' design' : ''}`, project.kind), el('span', 'years', yearsLabel(project.years)));
   const tags = el('div', 'tags');
@@ -48,7 +59,8 @@ function render(projects) {
     + 'their own backends and web consoles. Mostly Flutter, one codebase per product, shipped to the stores.';
 
   const sorted = [...projects].sort((a, b) => (b.years[1] ?? now + 1) - (a.years[1] ?? now + 1) || b.years[0] - a.years[0]);
-  document.getElementById('work-grid').replaceChildren(...sorted.map(card));
+  document.getElementById('featured-grid').replaceChildren(...sorted.filter((p) => p.shot).map(card));
+  document.getElementById('work-grid').replaceChildren(...sorted.filter((p) => !p.shot).map(card));
 }
 
 function renderQuotes(quotes) {
@@ -78,11 +90,49 @@ function renderTalks(talks) {
   }));
 }
 
+function renderOss(oss) {
+  const fmt = new Intl.NumberFormat('en');
+  document.getElementById('oss').replaceChildren(...oss.repos.map((r) => {
+    const a = el('a', 'repo');
+    a.href = r.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    const head = el('div', 'head');
+    head.append(el('span', 'name', r.name), el('span', 'stars', `★ ${fmt.format(r.stars)}`));
+    a.append(head, el('p', null, r.summary), el('span', 'lang', `${r.language} · ${fmt.format(r.forks)} forks`));
+    return a;
+  }));
+  document.getElementById('upstream').replaceChildren(...oss.upstream.map((u) => {
+    const a = el('a');
+    a.href = u.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    const b = el('b', null, String(u.commits));
+    a.append(`${u.project} · `, b, ` commit${u.commits === 1 ? '' : 's'}`);
+    return a;
+  }));
+  const stars = oss.repos.reduce((s, r) => s + r.stars, 0);
+  document.getElementById('oss-note').textContent =
+    `${fmt.format(stars)} GitHub stars across the libraries below, plus contributions to Flutter itself and the packages Flutter teams rely on. Counts as of ${oss.updated}.`;
+}
+
+document.getElementById('copy-email').addEventListener('click', async (event) => {
+  const email = document.getElementById('email');
+  try {
+    await navigator.clipboard.writeText(email.textContent);
+    event.target.textContent = 'Copied';
+  } catch {
+    getSelection().selectAllChildren(email);
+    event.target.textContent = 'Press ⌘C';
+  }
+});
+
 const loadJson = (name) => fetch(`/data/work/${name}`).then((r) => {
   if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
   return r.json();
 });
 loadJson('testimonials.json').then(renderQuotes).catch(() => document.getElementById('clients').remove());
+loadJson('oss.json').then(renderOss).catch(() => document.getElementById('open-source').remove());
 loadJson('talks.json').then(renderTalks).catch(() => document.getElementById('speaking').remove());
 
 fetch('/data/work/projects.json')
