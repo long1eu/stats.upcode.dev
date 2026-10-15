@@ -15,6 +15,7 @@ checkout next to this repo and `glab` signed in to its GitLab:
 ```bash
 npm run collect:cinderblock   # git + GitLab -> public/data/cinderblock/*.json, then the preview image
 git commit -am "Refresh Cinderblock stats" && git push
+npm run deploy
 ```
 
 The preview image (`public/cinderblock/og.png`, used by Slack and other link previews) is
@@ -29,4 +30,12 @@ npm run build   # static site in dist/
 npm run serve   # serve the built site on http://localhost:4173
 ```
 
-Pushing to `main` builds and deploys through `.github/workflows/deploy.yml`.
+## Deploy
+
+```bash
+npm run deploy   # build, then publish dist/ to the gh-pages branch
+```
+
+Deploys run from your machine: `scripts/deploy.sh` builds the site and force-pushes `dist/` to
+the `gh-pages` branch, which GitHub Pages serves at stats.upcode.dev. It refuses to run with
+uncommitted changes, so every deploy matches a commit on `main`.
