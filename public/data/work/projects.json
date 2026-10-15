@@ -399,5 +399,24 @@
    2020
   ],
   "kind": "Consumer app"
+ },
+ {
+  "title": "Secure messaging for banking and financial services",
+  "summary": "Built in 2018, before Flutter 1.0: encrypted chat between financial firms and their clients, with passcode and Touch ID lock, offline history in SQLCipher, real-time sockets, document sharing and phone and tablet layouts.",
+  "platforms": [
+   "iOS",
+   "Android"
+  ],
+  "stack": [
+   "Flutter",
+   "Redux",
+   "SQLCipher",
+   "WebSockets"
+  ],
+  "years": [
+   2018,
+   2018
+  ],
+  "kind": "Fintech"
  }
 ]
