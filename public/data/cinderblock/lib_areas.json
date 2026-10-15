@@ -1,0 +1,47 @@
+[
+ {
+  "area": "presentation",
+  "files": 1956,
+  "lines": 231613
+ },
+ {
+  "area": "data",
+  "files": 465,
+  "lines": 34893
+ },
+ {
+  "area": "models",
+  "files": 200,
+  "lines": 12998
+ },
+ {
+  "area": "actions",
+  "files": 174,
+  "lines": 6092
+ },
+ {
+  "area": "epics",
+  "files": 44,
+  "lines": 5693
+ },
+ {
+  "area": "reducer",
+  "files": 30,
+  "lines": 4612
+ },
+ {
+  "area": "util",
+  "files": 13,
+  "lines": 1876
+ },
+ {
+  "area": "middleware",
+  "files": 4,
+  "lines": 1090
+ },
+ {
+  "area": "init",
+  "files": 4,
+  "lines": 589
+ }
+]

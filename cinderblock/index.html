@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cinderblock Mobile in numbers</title>
+    <meta name="description" content="Builds, merge requests, commits and code size of the Cinderblock mobile app." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Upcode stats" />
+    <meta property="og:url" content="https://stats.upcode.dev/cinderblock/" />
+    <meta property="og:title" content="Cinderblock Mobile in numbers" />
+    <meta property="og:description" content="Builds, merge requests, commits and code size of the Cinderblock mobile app, generated from its repository." />
+    <meta property="og:image" content="https://stats.upcode.dev/cinderblock/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Cinderblock Mobile in numbers: merged MRs, tagged builds, commits and Dart lines" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="title-block">
+        <span class="eyebrow"><a href="/">Upcode stats</a> · Cinderblock</span>
+        <h1>Cinderblock Mobile in numbers</h1>
+        <p id="takeaway" class="loading">Loading…</p>
+        <span class="meta" id="meta"></span>
+      </header>
+
+      <div class="figures" id="figures">
+        <div class="figure"><span class="label">Merged MRs</span><span class="value" data-total="merged_mrs">—</span><span class="note" data-note="merged_mrs"></span></div>
+        <div class="figure"><span class="label">Tagged builds</span><span class="value" data-total="tags">—</span><span class="note" data-note="tags"></span></div>
+        <div class="figure"><span class="label">Commits</span><span class="value" data-total="commits">—</span><span class="note" data-note="commits"></span></div>
+        <div class="figure"><span class="label">Dart lines</span><span class="value" data-total="dart_lines">—</span><span class="note" data-note="dart_lines"></span></div>
+        <div class="figure"><span class="label">Offline-synced domains</span><span class="value" data-total="synced_domains">—</span><span class="note" data-note="synced_domains"></span></div>
+        <div class="figure"><span class="label">Test files</span><span class="value" data-total="test_files">—</span><span class="note" data-note="test_files"></span></div>
+      </div>
+
+      <section>
+        <h2><span class="ref">A-1</span>Shipping</h2>
+        <div class="sheets">
+          <div class="sheet">
+            <h3>Builds per month</h3>
+            <p class="caption">Every tag cut for a build: dev (+main), release candidate (+rcN) and store release.</p>
+            <div class="legend" id="builds-legend"></div>
+            <div class="chart tall" id="builds-chart"></div>
+          </div>
+          <div class="sheet">
+            <h3>Merged merge requests per month</h3>
+            <p class="caption">Reviewed changes merged on GitLab since November 2018.</p>
+            <div class="chart tall" id="mrs-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="ref">A-2</span>Activity</h2>
+        <div class="sheets">
+          <div class="sheet">
+            <h3>Commits per month</h3>
+            <p class="caption">Non-merge commits since git history begins in May 2022.</p>
+            <div class="chart" id="commits-chart"></div>
+          </div>
+          <div class="sheet">
+            <h3>Lines added and removed per month</h3>
+            <p class="caption">Hand-written files only; generated code, vendored packages, lock files and coverage reports are left out.</p>
+            <div class="legend" id="churn-legend"></div>
+            <div class="chart" id="churn-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="ref">A-3</span>Code</h2>
+        <div class="sheets">
+          <div class="sheet">
+            <h3>Where the app code lives</h3>
+            <p class="caption">Lines of hand-written Dart per folder under lib/src.</p>
+            <div class="chart" id="areas-chart"></div>
+          </div>
+          <div class="sheet">
+            <h3>Languages</h3>
+            <p class="caption">Tracked, hand-written files.</p>
+            <div class="table-wrap">
+              <table id="langs-table">
+                <thead><tr><th>Language</th><th class="num">Files</th><th class="num">Lines</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">Generated from the cb-mobile repository and its GitLab project.</footer>
+    </main>
+    <script type="module" src="/src/cinderblock.js"></script>
+  </body>
+</html>
