@@ -1,0 +1,162 @@
+[
+ {
+  "title": "Field-service platform for contractors",
+  "summary": "Jobs, estimates, invoices, scheduling, timesheets and forms for construction crews. Offline-first, with local storage and a persisted sync queue; one codebase for iOS, Android, macOS and Windows, with code push.",
+  "platforms": ["iOS", "Android", "macOS", "Windows"],
+  "stack": ["Flutter", "Redux", "Drift", "Protobuf", "Shorebird"],
+  "years": [2022, null],
+  "kind": "Product"
+ },
+ {
+  "title": "Security patrol & monitoring platform",
+  "summary": "Mobile apps for guards and supervisors with offline maps and sync, plus the backend and the web control room.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Redux", "Drift", "Firebase", "NestJS", "Angular"],
+  "years": [2019, 2024],
+  "kind": "Platform"
+ },
+ {
+  "title": "Athlete training & team performance platform",
+  "summary": "Mobile and web apps for teams and coaches, with a custom video player, shared UI kit and backend in one monorepo with CI/CD.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Node.js"],
+  "years": [2019, 2024],
+  "kind": "Platform"
+ },
+ {
+  "title": "Nutrition & diet-tracking app",
+  "summary": "A modular Flutter monorepo for a consumer health app: feature packages, shared core and a design system documented in Widgetbook.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter", "Widgetbook"],
+  "years": [2022, 2022],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Offline companion for technical documentation",
+  "summary": "A mobile companion that keeps industrial documentation available without a connection.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2024, 2025],
+  "kind": "Enterprise app"
+ },
+ {
+  "title": "Field operations app with offline maps",
+  "summary": "A field app with maps and local storage for teams working away from a connection.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter", "Redux", "Drift"],
+  "years": [2023, 2023],
+  "kind": "Enterprise app"
+ },
+ {
+  "title": "Car marketplace member app",
+  "summary": "A member app for customers to find their favourite cars, alongside a companion store.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2023, 2023],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Voice AI app",
+  "summary": "A mobile app and an upload service for a voice AI product.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2023, 2023],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Consumer social app with an in-app camera",
+  "summary": "A social app for iOS, Android and web, plus a standalone camera SDK.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Redux", "Drift", "Firebase"],
+  "years": [2021, 2022],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Real-time video social app",
+  "summary": "A social app with live video calls on iOS, Android and web.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Firebase", "Agora"],
+  "years": [2020, 2022],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "CRM & invoicing SaaS mobile app",
+  "summary": "The mobile client of a business SaaS: contacts, opportunities, documents, dashboard and global search, built as feature modules.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2020, 2021],
+  "kind": "B2B app"
+ },
+ {
+  "title": "Restaurant operations platform",
+  "summary": "A mobile app, admin panel, web confirmation flow and Firebase backend for hospitality teams.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Firebase"],
+  "years": [2020, 2021],
+  "kind": "Platform"
+ },
+ {
+  "title": "Social video app",
+  "summary": "A consumer app and a manager app on a shared core, with an event-driven Firebase and Pub/Sub backend.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter", "Firebase", "Node.js"],
+  "years": [2020, 2021],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Health research app",
+  "summary": "A mobile app for collecting data in health studies.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2020, 2021],
+  "kind": "Research"
+ },
+ {
+  "title": "Learning platform with AI features",
+  "summary": "Mobile and web apps, an admin panel, a Firebase backend and an intelligence service.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Firebase"],
+  "years": [2020, 2021],
+  "kind": "Platform"
+ },
+ {
+  "title": "Ride-hailing apps",
+  "summary": "Rider and driver apps for a ride-hailing service.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2021, 2021],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Travel app for parents",
+  "summary": "A travel planning app built for families.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2021, 2021],
+  "kind": "Consumer app"
+ },
+ {
+  "title": "Legal document editor",
+  "summary": "A document editor for legal work on web and macOS.",
+  "platforms": ["Web", "macOS"],
+  "stack": ["Flutter"],
+  "years": [2021, 2021],
+  "kind": "B2B app"
+ },
+ {
+  "title": "App for an industrial hydraulics manufacturer",
+  "summary": "A mobile app for an industrial manufacturer's products.",
+  "platforms": ["iOS", "Android"],
+  "stack": ["Flutter"],
+  "years": [2021, 2021],
+  "kind": "Enterprise app"
+ },
+ {
+  "title": "Consumer app with API and web tooling",
+  "summary": "A mobile app with its API, shared packages, web tooling and CI.",
+  "platforms": ["iOS", "Android", "Web"],
+  "stack": ["Flutter", "Dart"],
+  "years": [2019, 2021],
+  "kind": "Consumer app"
+ }
+]

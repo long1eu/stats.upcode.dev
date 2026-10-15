@@ -1,0 +1,12 @@
+.work-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; }
+.work-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px;
+  display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.work-card .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.work-card .kind { font: 500 11px/1.4 var(--font-mono); letter-spacing: 1.5px; text-transform: uppercase; color: var(--teal); }
+.work-card .years { font: 500 12px/1.4 var(--font-mono); color: var(--muted); white-space: nowrap; }
+.work-card h3 { font: 600 19px/1.28 var(--font-sans); letter-spacing: -0.4px; margin: 0; text-wrap: balance; }
+.work-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.work-card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+.work-card .tag { font: 500 11px/1 var(--font-mono); padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); color: var(--text); background: rgba(10, 15, 20, 0.5); }
+.work-card .tag.platform { color: var(--teal); border-color: rgba(31, 209, 174, 0.3); }
+.work-card.current { border-color: rgba(31, 209, 174, 0.45); box-shadow: 0 0 32px rgba(31, 209, 174, 0.08); }
