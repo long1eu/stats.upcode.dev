@@ -54,7 +54,9 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
     background-image: linear-gradient(rgba(150,190,240,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(150,190,240,.08) 1px, transparent 1px);
     background-size: 30px 30px; }
   .head { position: absolute; top: 40px; left: 0; right: 0; text-align: center; }
-  .eyebrow { color: #f2a93b; font-size: 20px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+  .eyebrow { color: #f2a93b; font-size: 20px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+    display: inline-flex; align-items: center; gap: 12px; }
+  .mark { width: 34px; height: 34px; }
   .title { font: 800 34px/1.1 'Archivo', sans-serif; margin-top: 8px; color: #c9d6e6; }
   .hero { position: absolute; left: 285px; width: 630px; top: 130px; height: 370px; display: flex; flex-direction: column;
     align-items: center; justify-content: center; text-align: center; }
@@ -67,7 +69,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
   .foot .v { font: 800 34px/1 'Archivo', sans-serif; }
   .foot .l { color: #93a6bd; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-top: 6px; }
 </style></head><body>
-  <div class="head"><div class="eyebrow">stats.upcode.dev · v${totals.current_version.replace(/\+.*/, '')}</div>
+  <div class="head"><div class="eyebrow"><img class="mark" src="file://${fileURLToPath(new URL('../public/favicon.svg', import.meta.url))}">stats.upcode.dev · v${totals.current_version.replace(/\+.*/, '')}</div>
     <div class="title">Cinderblock Mobile in numbers</div></div>
   <div class="hero"><div class="v">${int(totals.tags)}</div><div class="l">builds</div>
     <div class="s">${int(buildsThisYear)} in ${year}</div></div>
