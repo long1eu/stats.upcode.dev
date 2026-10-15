@@ -4,6 +4,7 @@
 //
 //   node scripts/og.mjs
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { existsSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -35,41 +36,42 @@ const description =
   `${int(totals.commits)} commits · ${thousands(totals.dart_lines)} lines of Dart · ` +
   `${totals.synced_domains} offline-synced domains. Latest: v${totals.current_version.replace(/\+.*/, '')}.`;
 
-const pagePath = new URL('../cinderblock/index.html', import.meta.url);
-const page = readFileSync(pagePath, 'utf8')
-  .replace(/(<meta name="description" content=")[^"]*(")/, `$1${description}$2`)
-  .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${description}$2`)
-  // A new image URL per data refresh, so Slack fetches it instead of reusing its cached copy.
-  .replace(/(<meta property="og:image" content="[^"?]*)(\?v=[^"]*)?(")/, `$1?v=${totals.updated}-${totals.tags}$3`);
-writeFileSync(pagePath, page);
-console.log(`description: ${description}`);
 
-const figures = [
-  [int(totals.merged_mrs), 'Merged MRs', `${int(mrsThisYear)} in ${year}`],
-  [int(totals.tags), 'Tagged builds', `${int(buildsThisYear)} in ${year}`],
-  [int(totals.commits), 'Commits', `since ${totals.first_commit.slice(0, 4)}`],
-  [thousands(totals.dart_lines), 'Lines of Dart', `${int(totals.dart_files)} files`],
-  [String(totals.synced_domains), 'Offline-synced domains', `${totals.proto_messages} protobuf messages`],
-  [String(totals.test_files), 'Test files', `+ ${totals.integration_suites} integration suites`],
+// Slack and other compact previews show only the centre square of the image as a small
+// thumbnail, so the centre holds one number big enough to read at that size; the title and
+// secondary figures sit around it for the full-width view.
+const side = [
+  [int(totals.merged_mrs), 'merged MRs', `${int(mrsThisYear)} in ${year}`],
+  [int(totals.commits), 'commits', `since ${totals.first_commit.slice(0, 4)}`],
+  [thousands(totals.dart_lines), 'lines of Dart', `${totals.synced_domains} offline-synced domains`],
 ];
 
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <style>
-  html, body { margin: 0; width: 1200px; height: 630px; }
-  body { background: #0d1b2e; color: #e6eef8; font-family: 'IBM Plex Mono', monospace; box-sizing: border-box;
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { background: #0d1b2e; color: #e6eef8; font-family: 'IBM Plex Mono', monospace; position: relative;
     background-image: linear-gradient(rgba(150,190,240,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(150,190,240,.08) 1px, transparent 1px);
-    background-size: 30px 30px; padding: 52px 64px; display: flex; flex-direction: column; justify-content: space-between; }
-  .eyebrow { color: #f2a93b; font-size: 20px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
-  h1 { font: 800 60px/1.02 'Archivo', sans-serif; margin: 12px 0 0; letter-spacing: -.01em; }
-  .figs { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 3px solid #e6eef8; }
-  .fig { padding: 20px 0 14px; border-bottom: 1px solid rgba(150,190,240,.25); }
-  .v { font: 800 50px/1 'Archivo', sans-serif; }
-  .l { color: #93a6bd; font-size: 16px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-top: 8px; }
-  .s { color: #f2a93b; font-size: 16px; margin-top: 4px; }
+    background-size: 30px 30px; }
+  .head { position: absolute; top: 40px; left: 0; right: 0; text-align: center; }
+  .eyebrow { color: #f2a93b; font-size: 20px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+  .title { font: 800 34px/1.1 'Archivo', sans-serif; margin-top: 8px; color: #c9d6e6; }
+  .hero { position: absolute; left: 285px; width: 630px; top: 130px; height: 370px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; }
+  .hero .v { font: 800 230px/0.9 'Archivo', sans-serif; letter-spacing: -.03em; }
+  .hero .l { font: 800 64px/1 'Archivo', sans-serif; color: #f2a93b; margin-top: 6px; }
+  .hero .s { font-size: 26px; color: #93a6bd; margin-top: 12px; letter-spacing: .04em; }
+  .foot { position: absolute; bottom: 36px; left: 64px; right: 64px; display: grid; grid-template-columns: repeat(3, 1fr);
+    border-top: 2px solid rgba(230,238,248,.5); padding-top: 16px; }
+  .foot div { text-align: center; }
+  .foot .v { font: 800 34px/1 'Archivo', sans-serif; }
+  .foot .l { color: #93a6bd; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-top: 6px; }
 </style></head><body>
-  <div><div class="eyebrow">stats.upcode.dev · v${totals.current_version.replace(/\+.*/, '')}</div><h1>Cinderblock Mobile in numbers</h1></div>
-  <div class="figs">${figures.map(([v, l, s]) => `<div class="fig"><div class="v">${v}</div><div class="l">${l}</div><div class="s">${s}</div></div>`).join('')}</div>
+  <div class="head"><div class="eyebrow">stats.upcode.dev · v${totals.current_version.replace(/\+.*/, '')}</div>
+    <div class="title">Cinderblock Mobile in numbers</div></div>
+  <div class="hero"><div class="v">${int(totals.tags)}</div><div class="l">builds</div>
+    <div class="s">${int(buildsThisYear)} in ${year}</div></div>
+  <div class="foot">${side.map(([v, l]) => `<div><div class="v">${v}</div><div class="l">${l}</div></div>`).join('')}</div>
 </body></html>`;
 
 const dir = mkdtempSync(join(tmpdir(), 'og-'));
@@ -81,3 +83,14 @@ execFileSync(CHROME, [
   '--window-size=1200,630', '--virtual-time-budget=5000', `--screenshot=${output}`, `file://${card}`,
 ], { stdio: 'ignore' });
 console.log('wrote public/cinderblock/og.png');
+
+const imageHash = createHash('sha256').update(readFileSync(output)).digest('hex').slice(0, 10);
+const pagePath = new URL('../cinderblock/index.html', import.meta.url);
+const page = readFileSync(pagePath, 'utf8')
+  .replace(/(<meta name="description" content=")[^"]*(")/, `$1${description}$2`)
+  .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${description}$2`)
+  // The image URL carries its content hash, so Slack fetches a changed image instead of
+  // reusing its cached copy.
+  .replace(/(<meta property="og:image" content="[^"?]*)(\?v=[^"]*)?(")/, `$1?v=${imageHash}$3`);
+writeFileSync(pagePath, page);
+console.log(`description: ${description}`);
