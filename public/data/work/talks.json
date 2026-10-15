@@ -1,0 +1,22 @@
+[
+ {
+  "event": "droidcon London",
+  "year": 2023,
+  "title": "Executing Dart code in background with Flutter",
+  "kind": "Conference talk"
+ },
+ {
+  "event": "Flutter Festival Bucharest (GDG Bucharest)",
+  "year": 2022,
+  "title": "Flutter Qwik Start",
+  "kind": "Talk",
+  "url": "https://gdg.community.dev/events/details/google-gdg-bucharest-presents-flutter-festival-bucharest"
+ },
+ {
+  "event": "Flutter Warsaw #11 (online)",
+  "year": 2020,
+  "title": "What the Flutter! Or what makes it so performant",
+  "kind": "Talk and panel",
+  "url": "https://www.meetup.com/pl-pl/flutter-warsaw/events/268796925/"
+ }
+]

@@ -51,6 +51,40 @@ function render(projects) {
   document.getElementById('work-grid').replaceChildren(...sorted.map(card));
 }
 
+function renderQuotes(quotes) {
+  document.getElementById('quotes').replaceChildren(...quotes.map((q) => {
+    const fig = el('figure', 'quote');
+    const cap = el('figcaption');
+    cap.append(el('span', null, `${q.context} · ${q.year}`), el('span', 'stars', '★★★★★'));
+    fig.append(el('blockquote', null, q.quote), cap);
+    return fig;
+  }));
+  document.getElementById('reviews-note').textContent =
+    `${quotes.length} reviews from Upwork, quoted as written; every rated job there is 5.0, with a 100% Job Success Score.`;
+}
+
+function renderTalks(talks) {
+  document.getElementById('talks').replaceChildren(...talks.map((t) => {
+    const node = t.url ? el('a', 'talk') : el('div', 'talk');
+    if (t.url) {
+      node.href = t.url;
+      node.target = '_blank';
+      node.rel = 'noopener';
+    }
+    const meta = el('div', 'meta');
+    meta.append(el('span', null, t.kind), el('span', null, String(t.year)));
+    node.append(meta, el('h3', null, t.title), el('span', 'event', t.event));
+    return node;
+  }));
+}
+
+const loadJson = (name) => fetch(`/data/work/${name}`).then((r) => {
+  if (!r.ok) throw new Error(`${name}: HTTP ${r.status}`);
+  return r.json();
+});
+loadJson('testimonials.json').then(renderQuotes).catch(() => document.getElementById('clients').remove());
+loadJson('talks.json').then(renderTalks).catch(() => document.getElementById('speaking').remove());
+
 fetch('/data/work/projects.json')
   .then((r) => {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
