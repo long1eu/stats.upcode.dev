@@ -9,6 +9,7 @@ export default defineConfig({
         index: resolve(import.meta.dirname, 'index.html'),
         cinderblock: resolve(import.meta.dirname, 'cinderblock/index.html'),
         work: resolve(import.meta.dirname, 'work/index.html'),
+        fieldService: resolve(import.meta.dirname, 'work/field-service/index.html'),
       },
     },
   },

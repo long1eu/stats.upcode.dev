@@ -33,6 +33,11 @@ function card(project) {
   for (const p of project.platforms) tags.append(el('span', 'tag platform', p));
   for (const s of project.stack) tags.append(el('span', 'tag', s));
   article.append(top, el('h3', null, project.title), el('p', null, project.summary), tags);
+  if (project.case) {
+    const link = el('a', 'case-link', 'Read the case study →');
+    link.href = project.case;
+    article.append(link);
+  }
   return article;
 }
 

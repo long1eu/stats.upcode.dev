@@ -72,3 +72,16 @@ a.talk:hover { border-color: var(--teal); }
 .work-grid.featured { grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); }
 .work-grid.compact { align-items: start; }
 .subhead { font: 600 18px/1.3 var(--font-sans); letter-spacing: -0.4px; margin: 32px 0 14px; color: var(--muted); }
+.case .prose { max-width: 72ch; color: var(--text); font-size: 17px; line-height: 1.6; }
+.case .prose p { margin: 0 0 14px; }
+.case .prose ul { margin: 0 0 14px; padding-left: 20px; color: var(--muted); }
+.case .prose li { margin-bottom: 8px; }
+.case-shot { margin: 0; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+.case-shot img { display: block; width: 100%; height: auto; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.steps article { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.steps h3 { margin: 0 0 8px; font: 600 18px/1.3 var(--font-sans); }
+.steps p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.work-card .case-link { font: 500 13px/1 var(--font-mono); color: var(--teal); margin-top: auto; }
+a.brand, .work-card .case-link { text-decoration: none; }
+.work-card .case-link:hover { text-decoration: underline; }

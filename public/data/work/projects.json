@@ -20,7 +20,8 @@
    null
   ],
   "kind": "Product",
-  "shot": "field-service"
+  "shot": "field-service",
+  "case": "/work/field-service/"
  },
  {
   "title": "Infrastructure monitoring platform",
