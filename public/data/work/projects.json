@@ -278,7 +278,7 @@
  },
  {
   "title": "Social quiz app with its own intelligence engine",
-  "summary": "A social network and quiz app in one, designed and built end to end: UI/UX and the marketing site, mobile and web apps, an admin panel, a Firebase backend and a custom intelligence service, built from scratch in 2020, before today’s AI tools existed.",
+  "summary": "A social network and quiz app for a Swiss AI company, designed and built end to end: UI/UX and the marketing site, mobile and web apps, an admin panel, a Firebase and Cloud Run backend and a custom intelligence service, built from scratch in 2020, before today’s AI tools existed. Razvan was Head of Development, leading a six-person team through 3,400+ commits from first build to the App Store.",
   "platforms": [
    "iOS",
    "Android",
@@ -287,7 +287,9 @@
   "stack": [
    "Product design",
    "Flutter",
-   "Firebase"
+   "Firebase",
+   "Cloud Run",
+   "Python"
   ],
   "years": [
    2020,
