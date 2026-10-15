@@ -54,14 +54,14 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
     background-image: linear-gradient(rgba(150,190,240,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(150,190,240,.08) 1px, transparent 1px);
     background-size: 30px 30px; }
   .head { position: absolute; top: 40px; left: 0; right: 0; text-align: center; }
-  .eyebrow { color: #f2a93b; font-size: 20px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+  .eyebrow { color: #27debf; font-size: 20px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
     display: inline-flex; align-items: center; gap: 12px; }
   .mark { width: 34px; height: 34px; }
   .title { font: 800 34px/1.1 'Archivo', sans-serif; margin-top: 8px; color: #c9d6e6; }
   .hero { position: absolute; left: 285px; width: 630px; top: 130px; height: 370px; display: flex; flex-direction: column;
     align-items: center; justify-content: center; text-align: center; }
   .hero .v { font: 800 230px/0.9 'Archivo', sans-serif; letter-spacing: -.03em; }
-  .hero .l { font: 800 64px/1 'Archivo', sans-serif; color: #f2a93b; margin-top: 6px; }
+  .hero .l { font: 800 64px/1 'Archivo', sans-serif; color: #27debf; margin-top: 6px; }
   .hero .s { font-size: 26px; color: #93a6bd; margin-top: 12px; letter-spacing: .04em; }
   .foot { position: absolute; bottom: 36px; left: 64px; right: 64px; display: grid; grid-template-columns: repeat(3, 1fr);
     border-top: 2px solid rgba(230,238,248,.5); padding-top: 16px; }

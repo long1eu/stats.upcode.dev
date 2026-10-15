@@ -6,7 +6,8 @@
   --ink-muted: #5a6878;
   --rule: #d5dde6;
   --grid: rgba(40, 90, 150, 0.07);
-  --accent: #d98a00;
+  /* Upcode teal (#27debf); darker on light backgrounds so text stays readable. */
+  --accent: #0b7d6a;
   --series-1: #2f6db5;
   --series-2: #d98a00;
   --series-3: #3f8f6b;
@@ -26,7 +27,7 @@
     --ink-muted: #93a6bd;
     --rule: #26405f;
     --grid: rgba(150, 190, 240, 0.06);
-    --accent: #f2a93b;
+    --accent: #27debf;
     --series-1: #6ea8ec;
     --series-2: #f2a93b;
     --series-3: #6cc59a;
