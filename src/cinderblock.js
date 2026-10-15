@@ -162,14 +162,15 @@ function fillTable(table, rows) {
 function renderFigures(t) {
   const thisYear = new Date().getUTCFullYear();
   const notes = {
-    merged_mrs: `since ${monthName(parseMonth(t.first_mr_month))}, by ${t.mr_authors} people`,
+    reviews: `${int(t.merged_mrs)} GitLab MRs · ${int(t.merged_prs)} GitHub PRs`,
     tags: `${int(t.dev_builds)} dev · ${int(t.rc_builds)} rc · ${int(t.store_builds)} store`,
     commits: `since ${monthName(new Date(t.first_commit))}`,
     dart_lines: `${int(t.dart_files)} files, hand-written`,
     synced_domains: `${t.proto_messages} protobuf messages stored locally`,
     test_files: `plus ${t.integration_suites} integration suites`,
   };
-  for (const el of document.querySelectorAll('[data-total]')) el.textContent = int(t[el.dataset.total]);
+  const values = { ...t, reviews: t.merged_mrs + t.merged_prs };
+  for (const el of document.querySelectorAll('[data-total]')) el.textContent = int(values[el.dataset.total]);
   for (const el of document.querySelectorAll('[data-note]')) el.textContent = notes[el.dataset.note];
   document.getElementById('meta').textContent =
     `v${t.current_version} · latest store release ${t.latest_store_release} · updated ${t.updated}`;
@@ -182,11 +183,11 @@ async function main() {
   );
   const year = renderFigures(totals);
   const buildsThisYear = d3.sum(builds.filter((b) => b.month.startsWith(String(year))), (b) => b.dev + b.rc + b.store + b.other);
-  const mrsThisYear = d3.sum(mrs.filter((m) => m.month.startsWith(String(year))), (m) => m.merged_mrs);
+  const mrsThisYear = d3.sum(mrs.filter((m) => m.month.startsWith(String(year))), (m) => m.merged_mrs + m.merged_prs);
   const takeaway = document.getElementById('takeaway');
   takeaway.classList.remove('loading');
-  takeaway.textContent = `${int(buildsThisYear)} builds and ${int(mrsThisYear)} merged merge requests so far in ${year}, `
-    + `out of ${int(totals.tags)} builds and ${int(totals.merged_mrs)} merge requests overall.`;
+  takeaway.textContent = `${int(buildsThisYear)} builds and ${int(mrsThisYear)} reviewed changes so far in ${year}, `
+    + `out of ${int(totals.tags)} builds and ${int(totals.merged_mrs + totals.merged_prs)} reviewed changes overall.`;
 
   const draw = () => {
     const kinds = [
@@ -197,7 +198,12 @@ async function main() {
     ];
     legend(document.getElementById('builds-legend'), kinds);
     monthBars(document.getElementById('builds-chart'), builds, kinds, { height: 300 });
-    monthBars(document.getElementById('mrs-chart'), mrs, [{ key: 'merged_mrs', label: 'Merged MRs', color: css('--series-1') }], { height: 300 });
+    const reviews = [
+      { key: 'merged_mrs', label: 'GitLab MRs', color: css('--series-1') },
+      { key: 'merged_prs', label: 'GitHub PRs', color: css('--series-2') },
+    ];
+    legend(document.getElementById('mrs-legend'), reviews);
+    monthBars(document.getElementById('mrs-chart'), mrs, reviews, { height: 300 });
     monthBars(document.getElementById('commits-chart'), commits, [{ key: 'commits', label: 'Commits', color: css('--series-1') }]);
     const churn = [
       { key: 'lines_added', label: 'Added', color: css('--good') },

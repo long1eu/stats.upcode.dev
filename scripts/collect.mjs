@@ -2,7 +2,9 @@
 //
 //   node scripts/collect.mjs ../cb-mobile
 //
-// Needs `git` and an authenticated `glab` that can read the project. Writes JSON into
+// Needs `git`, an authenticated `glab` that can read the GitLab project, and `gh` with access to
+// the GitHub repository (GH_REPO below; set GH_TOKEN for an account that can read it). Reviews
+// moved from GitLab to GitHub pull requests in 2022 and back in Dec 2024, so both count. Writes JSON into
 // public/data/cinderblock/. Aggregates only: no names or per-person figures leave this script.
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
@@ -15,6 +17,7 @@ if (!repo || !existsSync(join(repo, '.git'))) {
 }
 const out = new URL('../public/data/cinderblock/', import.meta.url);
 
+const GH_REPO = process.env.GH_REPO ?? 'cinderblock-app/mobile';
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: repo, encoding: 'utf8', maxBuffer: 1 << 30 });
 
 // Generated code, vendored packages, lock files, coverage reports and data files.
@@ -94,7 +97,13 @@ for (let page = 1; ; page++) {
     mrs.set(month, (mrs.get(month) ?? 0) + 1);
   }
 }
-const mrsMonthly = [...mrs.entries()].map(([month, merged_mrs]) => ({ month, merged_mrs })).sort((a, b) => a.month.localeCompare(b.month));
+// Merged pull requests per month on the GitHub repository.
+const prs = new Map();
+const prMonths = run('gh', ['api', '--paginate', `repos/${GH_REPO}/pulls?state=closed&per_page=100`, '--jq', '.[] | select(.merged_at != null) | .merged_at[0:7]']);
+for (const month of prMonths.split('\n').filter(Boolean)) prs.set(month, (prs.get(month) ?? 0) + 1);
+
+const reviewMonths = [...new Set([...mrs.keys(), ...prs.keys()])].sort();
+const mrsMonthly = reviewMonths.map((month) => ({ month, merged_mrs: mrs.get(month) ?? 0, merged_prs: prs.get(month) ?? 0 }));
 write('mrs_monthly.json', mrsMonthly);
 
 // Code size by language and by app folder.
@@ -145,6 +154,7 @@ write('totals.json', {
   current_version: /^version: (\S+)/m.exec(pubspec)[1],
   latest_store_release: store.at(-1),
   merged_mrs: mrsMonthly.reduce((s, r) => s + r.merged_mrs, 0),
+  merged_prs: mrsMonthly.reduce((s, r) => s + r.merged_prs, 0),
   first_mr_month: mrsMonthly[0]?.month,
   mr_authors: authors.size,
   tags: tags.length,

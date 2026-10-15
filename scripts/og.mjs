@@ -24,14 +24,14 @@ const buildsThisYear = data('builds_monthly.json')
   .reduce((sum, r) => sum + r.dev + r.rc + r.store + r.other, 0);
 const mrsThisYear = data('mrs_monthly.json')
   .filter((r) => r.month.startsWith(year))
-  .reduce((sum, r) => sum + r.merged_mrs, 0);
+  .reduce((sum, r) => sum + r.merged_mrs + r.merged_prs, 0);
 
 const int = (n) => n.toLocaleString('en-US');
 const thousands = (n) => `${Math.round(n / 1000)}k`;
 
 // The text Slack shows under the title.
 const description =
-  `${int(totals.merged_mrs)} merged MRs (${int(mrsThisYear)} in ${year}) · ` +
+  `${int(totals.merged_mrs + totals.merged_prs)} reviewed changes (${int(mrsThisYear)} in ${year}) · ` +
   `${int(totals.tags)} builds (${int(buildsThisYear)} in ${year}) · ` +
   `${int(totals.commits)} commits · ${thousands(totals.dart_lines)} lines of Dart · ` +
   `${totals.synced_domains} offline-synced domains. Latest: v${totals.current_version.replace(/\+.*/, '')}.`;
@@ -41,7 +41,7 @@ const description =
 // thumbnail, so the centre holds one number big enough to read at that size; the title and
 // secondary figures sit around it for the full-width view.
 const side = [
-  [int(totals.merged_mrs), 'merged MRs', `${int(mrsThisYear)} in ${year}`],
+  [int(totals.merged_mrs + totals.merged_prs), 'reviewed changes', `${int(mrsThisYear)} in ${year}`],
   [int(totals.commits), 'commits', `since ${totals.first_commit.slice(0, 4)}`],
   [thousands(totals.dart_lines), 'lines of Dart', `${totals.synced_domains} offline-synced domains`],
 ];
