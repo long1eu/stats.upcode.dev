@@ -67,12 +67,12 @@ function renderQuotes(quotes) {
   document.getElementById('quotes').replaceChildren(...quotes.map((q) => {
     const fig = el('figure', 'quote');
     const cap = el('figcaption');
-    cap.append(el('span', null, `${q.context} · ${q.year}`), el('span', 'stars', '★★★★★'));
+    cap.append(el('span', null, `${q.context} · ${q.year}`));
     fig.append(el('blockquote', null, q.quote), cap);
     return fig;
   }));
   document.getElementById('reviews-note').textContent =
-    `${quotes.length} reviews from Upwork, quoted as written; every rated job there is 5.0, with a 100% Job Success Score.`;
+    `${quotes.length} reviews from Upwork, quoted as written; the Upcode agency has a 100% Job Success Score and over $1M earned across 22,000+ hours.`;
 }
 
 function renderTalks(talks) {

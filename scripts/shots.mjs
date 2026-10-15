@@ -63,11 +63,11 @@ const SCREENS = {
     `${bar('Add food', 'Search')}<div class="search">Search foods or scan a barcode</div>
      ${row('Greek yogurt', '5 g net carbs', '+ Add')}${row('Almonds, 30 g', '3 g net carbs', '+ Add')}${row('Salmon fillet', '0 g net carbs', '+ Add')}${row('Blueberries, 50 g', '6 g net carbs', '+ Add')}`,
   ],
-  knowledge: [
-    `${bar('For you', 'Feed')}<div class="card"><div class="s">Suggested by the engine</div><div class="t big">Onboarding playbook for new managers</div><div class="s">Read by 214 colleagues</div></div>
-     ${row('Quarterly planning guide', 'Strategy · 6 min', 'Saved')}${row('How we run retros', 'Teams · 4 min', 'New', T.blue)}${row('Security basics', 'Policy · 8 min', 'Required', T.amber)}`,
-    `${bar('Topic', 'Leadership')}<div class="card"><div class="s">Your progress</div><div class="num">72%</div>${bars([100, 100, 100, 100, 100, 60, 0, 0], T.blue)}</div>
-     ${row('Giving feedback', 'Completed', 'Done', T.muted)}${row('Running 1:1s', 'In progress', '60%', T.blue)}${row('Hiring well', 'Up next', 'Start')}`,
+  quiz: [
+    `${bar('Live quiz', 'Round 3/5')}<div class="card"><div class="s">Question 7 · 12 s left</div><div class="t big">Which planet has the shortest day?</div></div>
+     ${row('Jupiter', '41% of players', 'Your pick')}${row('Saturn', '27% of players', '', T.muted)}${row('Neptune', '19% of players', '', T.muted)}${row('Mars', '13% of players', '', T.muted)}`,
+    `${bar('Friends', 'This week')}<div class="card"><div class="s">Your streak</div><div class="num">12 days</div>${bars([60, 75, 50, 90, 70, 85, 100])}</div>
+     ${row('Maria challenged you', 'History · 10 questions', 'Play', T.blue)}${row('You beat Alex', '9 / 10 in Science', '+120')}${row('Weekly league', 'Rank 4 of 30', 'Top 5', T.amber)}`,
   ],
 };
 
