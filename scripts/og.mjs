@@ -46,31 +46,35 @@ const side = [
   [thousands(totals.dart_lines), 'lines of Dart', `${totals.synced_domains} offline-synced domains`],
 ];
 
+// Inlined: headless Chrome will not load a CSS mask from a file:// URL.
+const monogram = `data:image/svg+xml;base64,${readFileSync(new URL('../public/favicon.svg', import.meta.url)).toString('base64')}`;
 const html = `<!doctype html><html><head><meta charset="utf-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=JetBrains+Mono:wght@500&display=swap">
 <style>
   html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
-  body { background: #0d1b2e; color: #e6eef8; font-family: 'IBM Plex Mono', monospace; position: relative;
-    background-image: linear-gradient(rgba(150,190,240,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(150,190,240,.08) 1px, transparent 1px);
-    background-size: 30px 30px; }
-  .head { position: absolute; top: 40px; left: 0; right: 0; text-align: center; }
-  .eyebrow { color: #27debf; font-size: 20px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
-    display: inline-flex; align-items: center; gap: 12px; }
-  .mark { width: 34px; height: 34px; }
-  .title { font: 800 34px/1.1 'Archivo', sans-serif; margin-top: 8px; color: #c9d6e6; }
-  .hero { position: absolute; left: 285px; width: 630px; top: 130px; height: 370px; display: flex; flex-direction: column;
+  body { background: #0a0f14; color: #f2f6f8; font-family: 'Inter', sans-serif; position: relative; -webkit-font-smoothing: antialiased; }
+  .glow { position: absolute; width: 900px; height: 900px; left: 150px; top: -120px; filter: blur(60px);
+    background: radial-gradient(circle, rgba(31,209,174,.32) 0%, rgba(31,209,174,.08) 45%, transparent 68%); }
+  .bar { position: absolute; top: 40px; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 14px; }
+  .tile { width: 44px; height: 44px; border-radius: 11px; background: #1fd1ae; display: grid; place-items: center; }
+  .tile::after { content: ''; width: 37px; height: 37px; background: #06231e; -webkit-mask: url('${monogram}') center / contain no-repeat; }
+  .word { font: 600 28px/1 'Inter', sans-serif; letter-spacing: -.6px; }
+  .pill { position: absolute; top: 106px; left: 0; right: 0; text-align: center; font: 500 17px/1 'JetBrains Mono', monospace;
+    letter-spacing: 3px; text-transform: uppercase; color: #8da0ad; }
+  .hero { position: absolute; left: 285px; width: 630px; top: 140px; height: 360px; display: flex; flex-direction: column;
     align-items: center; justify-content: center; text-align: center; }
-  .hero .v { font: 800 230px/0.9 'Archivo', sans-serif; letter-spacing: -.03em; }
-  .hero .l { font: 800 64px/1 'Archivo', sans-serif; color: #27debf; margin-top: 6px; }
-  .hero .s { font-size: 26px; color: #93a6bd; margin-top: 12px; letter-spacing: .04em; }
-  .foot { position: absolute; bottom: 36px; left: 64px; right: 64px; display: grid; grid-template-columns: repeat(3, 1fr);
-    border-top: 2px solid rgba(230,238,248,.5); padding-top: 16px; }
+  .hero .v { font: 800 220px/0.9 'Inter', sans-serif; letter-spacing: -10px; }
+  .hero .l { font: 800 60px/1 'Inter', sans-serif; color: #1fd1ae; letter-spacing: -2px; margin-top: 8px; }
+  .hero .s { font: 500 22px/1 'JetBrains Mono', monospace; color: #8da0ad; margin-top: 16px; letter-spacing: 1px; }
+  .foot { position: absolute; bottom: 34px; left: 64px; right: 64px; display: grid; grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #1e2a33; padding-top: 18px; }
   .foot div { text-align: center; }
-  .foot .v { font: 800 34px/1 'Archivo', sans-serif; }
-  .foot .l { color: #93a6bd; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-top: 6px; }
+  .foot .v { font: 800 34px/1 'Inter', sans-serif; letter-spacing: -1px; }
+  .foot .l { color: #8da0ad; font: 500 14px/1 'JetBrains Mono', monospace; letter-spacing: 2px; text-transform: uppercase; margin-top: 8px; }
 </style></head><body>
-  <div class="head"><div class="eyebrow"><img class="mark" src="file://${fileURLToPath(new URL('../public/favicon.svg', import.meta.url))}">stats.upcode.dev · v${totals.current_version.replace(/\+.*/, '')}</div>
-    <div class="title">Cinderblock Mobile in numbers</div></div>
+  <div class="glow"></div>
+  <div class="bar"><span class="tile"></span><span class="word">upcode</span></div>
+  <div class="pill">Cinderblock Mobile · v${totals.current_version.replace(/\+.*/, '')}</div>
   <div class="hero"><div class="v">${int(totals.tags)}</div><div class="l">builds</div>
     <div class="s">${int(buildsThisYear)} in ${year}</div></div>
   <div class="foot">${side.map(([v, l]) => `<div><div class="v">${v}</div><div class="l">${l}</div></div>`).join('')}</div>

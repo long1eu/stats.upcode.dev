@@ -86,11 +86,11 @@ function monthBars(el, rows, series, { height = 240, diverge = false } = {}) {
 
   svg.append('g').selectAll('line').data(y.ticks(4)).join('line')
     .attr('x1', left).attr('x2', width - 4).attr('y1', (v) => y(v)).attr('y2', (v) => y(v))
-    .style('stroke', css('--rule'));
+    .style('stroke', css('--border'));
   svg.append('g').selectAll('text').data(y.ticks(4)).join('text')
     .attr('x', left - 6).attr('y', (v) => y(v)).attr('dy', '0.32em').attr('text-anchor', 'end').text(fmt);
   if (diverge) {
-    svg.append('line').attr('x1', left).attr('x2', width - 4).attr('y1', y(0)).attr('y2', y(0)).style('stroke', css('--ink-muted'));
+    svg.append('line').attr('x1', left).attr('x2', width - 4).attr('y1', y(0)).attr('y2', y(0)).style('stroke', css('--muted'));
   }
 
   const years = months.filter((d) => d.date.getUTCMonth() === 0);
