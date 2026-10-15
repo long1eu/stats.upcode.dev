@@ -252,8 +252,8 @@
   "kind": "Research"
  },
  {
-  "title": "Knowledge & learning platform",
-  "summary": "Designed and built end to end: product design and branding, mobile and web apps, an admin panel and a Firebase backend.",
+  "title": "Knowledge platform with its own intelligence engine",
+  "summary": "Designed and built end to end: product design and branding, mobile and web apps, an admin panel, a Firebase backend and a custom intelligence service, built from scratch in 2020, before today’s AI tools existed.",
   "platforms": [
    "iOS",
    "Android",
