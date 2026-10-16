@@ -63,6 +63,19 @@ const SCREENS = {
     `${bar('Add food', 'Search')}<div class="search">Search foods or scan a barcode</div>
      ${row('Greek yogurt', '5 g net carbs', '+ Add')}${row('Almonds, 30 g', '3 g net carbs', '+ Add')}${row('Salmon fillet', '0 g net carbs', '+ Add')}${row('Blueberries, 50 g', '6 g net carbs', '+ Add')}`,
   ],
+  fintech: [
+    `${bar('Unlock', 'Secure')}<div class="card"><div class="s">Enter your passcode</div><div class="num">• • • •</div><div class="s">Or use Touch ID</div></div>
+     ${row('Messages are encrypted', 'Stored with SQLCipher on this device', 'On')}${row('Session timeout', 'Locks after 5 minutes', 'Auto', T.blue)}`,
+    `${bar('Wealth team', '3 online')}${row('Your relationship manager', 'The portfolio review is ready to sign', 'New', T.teal)}
+     ${row('Q3 statement.pdf', 'Shared document · 2 pages', 'Open', T.blue)}${row('You', 'Thanks, I will review it tonight', 'Sent', T.muted)}
+     ${row('Compliance', 'This conversation is archived', 'Info', T.amber)}`,
+  ],
+  industrial: [
+    `${bar('Device', 'USB · Ch 3')}${row('Command block', 'Voltage max 16.0 V', 'Set')}${row('Ramp block', 'Rise time 120 ms', 'Set')}
+     ${row('Solenoid block', 'Current limit 1.8 A', 'Read', T.blue)}${row('Save to board', 'Persist all parameters', 'Write', T.amber)}`,
+    `${bar('Live values', 'BLE')}<div class="card"><div class="s">Solenoid current · live</div>${bars([30, 45, 62, 58, 70, 66, 74, 80], T.blue)}</div>
+     ${row('Recording', '4 ms sampling · 2 tracks', 'Rec', T.red)}${row('Export', 'CSV for analysis', 'Ready')}`,
+  ],
   quiz: [
     `${bar('Live quiz', 'Round 3/5')}<div class="card"><div class="s">Question 7 · 12 s left</div><div class="t big">Which planet has the shortest day?</div></div>
      ${row('Jupiter', '41% of players', 'Your pick')}${row('Saturn', '27% of players', '', T.muted)}${row('Neptune', '19% of players', '', T.muted)}${row('Mars', '13% of players', '', T.muted)}`,
