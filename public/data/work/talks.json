@@ -1,10 +1,9 @@
 [
  {
-  "event": "droidcon London",
-  "year": 2023,
-  "title": "Executing Dart code in background with Flutter",
-  "kind": "Conference talk · video",
-  "url": "https://www.youtube.com/watch?v=Ng7XRitr5oE"
+  "event": "Google Atelierul Digital pentru Programatori",
+  "year": "2020 – 2023",
+  "title": "Flutter course trainer, 8 cohorts",
+  "kind": "Course"
  },
  {
   "event": "GDG Baia Mare",
@@ -20,17 +19,18 @@
   "url": "https://gdg.community.dev/events/details/google-gdg-bucharest-presents-flutter-festival-bucharest"
  },
  {
+  "event": "droidcon London",
+  "year": 2021,
+  "title": "Executing Dart code in background with Flutter",
+  "kind": "Conference talk · video",
+  "url": "https://www.youtube.com/watch?v=Ng7XRitr5oE"
+ },
+ {
   "event": "Flutter Warsaw #11 (online)",
   "year": 2020,
   "title": "What the Flutter! Or what makes it so performant",
   "kind": "Talk and panel",
   "url": "https://www.meetup.com/flutter-warsaw/events/268796925/"
- },
- {
-  "event": "Google Atelierul Digital pentru Programatori",
-  "year": "2020 – 2023",
-  "title": "Flutter course trainer, 8 cohorts",
-  "kind": "Course"
  },
  {
   "event": "Coding Coach",
