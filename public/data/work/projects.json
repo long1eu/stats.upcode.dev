@@ -278,7 +278,7 @@
  },
  {
   "title": "Social quiz app with its own intelligence engine",
-  "summary": "A social network and quiz app for a Swiss AI company, designed and built end to end: UI/UX and the marketing site, mobile and web apps, an admin panel, a Firebase and Cloud Run backend and a custom intelligence service, built from scratch in 2020, before today’s AI tools existed. Razvan was Head of Development, leading a six-person team through 3,400+ commits from first build to the App Store.",
+  "summary": "A social network and quiz app for a Swiss AI company, designed and built end to end: UI/UX and the marketing site, mobile and web apps, an admin panel, a Firebase and Cloud Run backend and a custom intelligence service, built from scratch in 2020, before today’s AI tools existed. Razvan was Head of Development, leading a six-person team through 3,400+ commits, from first build to a head-to-head duel game with ratings and leaderboards.",
   "platforms": [
    "iOS",
    "Android",
