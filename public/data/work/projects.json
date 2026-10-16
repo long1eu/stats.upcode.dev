@@ -368,8 +368,8 @@
   "kind": "Industrial"
  },
  {
-  "title": "Chat & campaigns app with a gRPC backend",
-  "summary": "A consumer chat app with paid campaigns, in-app coins and moderation, backed by a gRPC API on Cloud Run, Firebase, an admin web tool and its own CI.",
+  "title": "Ad bidding platform with chat",
+  "summary": "Advertisers bid per message to reach nearby users: campaigns with bids, budgets and review, paid in in-app coins via Stripe and store purchases, delivered by scheduled jobs and answered in chat, with moderation. A gRPC API on Cloud Run, Firebase, an admin web tool and its own CI.",
   "platforms": [
    "iOS",
    "Android",
@@ -385,7 +385,7 @@
    2019,
    2021
   ],
-  "kind": "Consumer app"
+  "kind": "Platform"
  },
  {
   "title": "Comic reader app",
