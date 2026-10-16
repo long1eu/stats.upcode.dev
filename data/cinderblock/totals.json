@@ -1,0 +1,21 @@
+{
+ "updated": "2026-10-15",
+ "current_version": "4.5.70+main",
+ "latest_store_release": "v4.5.2",
+ "merged_mrs": 1728,
+ "merged_prs": 1279,
+ "first_mr_month": "2018-11",
+ "mr_authors": 11,
+ "tags": 435,
+ "dev_builds": 130,
+ "rc_builds": 151,
+ "store_builds": 133,
+ "commits": 2331,
+ "first_commit": "2022-05-23",
+ "dart_lines": 359355,
+ "dart_files": 3150,
+ "test_files": 155,
+ "integration_suites": 10,
+ "synced_domains": 34,
+ "proto_messages": 141
+}

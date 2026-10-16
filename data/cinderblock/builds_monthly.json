@@ -1,0 +1,380 @@
+[
+ {
+  "month": "2019-04",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 1
+ },
+ {
+  "month": "2019-05",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 1
+ },
+ {
+  "month": "2019-06",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 5
+ },
+ {
+  "month": "2019-07",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 1
+ },
+ {
+  "month": "2019-08",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 1
+ },
+ {
+  "month": "2019-10",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 1
+ },
+ {
+  "month": "2020-07",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 2
+ },
+ {
+  "month": "2021-09",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 2
+ },
+ {
+  "month": "2021-10",
+  "dev": 0,
+  "rc": 0,
+  "store": 0,
+  "other": 2
+ },
+ {
+  "month": "2022-11",
+  "dev": 0,
+  "rc": 0,
+  "store": 1,
+  "other": 0
+ },
+ {
+  "month": "2022-12",
+  "dev": 0,
+  "rc": 0,
+  "store": 6,
+  "other": 4
+ },
+ {
+  "month": "2023-01",
+  "dev": 0,
+  "rc": 3,
+  "store": 6,
+  "other": 0
+ },
+ {
+  "month": "2023-02",
+  "dev": 0,
+  "rc": 7,
+  "store": 4,
+  "other": 0
+ },
+ {
+  "month": "2023-03",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2023-04",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2023-05",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2023-06",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2023-07",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2023-08",
+  "dev": 0,
+  "rc": 7,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2023-09",
+  "dev": 0,
+  "rc": 5,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2023-10",
+  "dev": 0,
+  "rc": 4,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2023-11",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2023-12",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2024-01",
+  "dev": 0,
+  "rc": 8,
+  "store": 8,
+  "other": 0
+ },
+ {
+  "month": "2024-02",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2024-03",
+  "dev": 0,
+  "rc": 4,
+  "store": 4,
+  "other": 0
+ },
+ {
+  "month": "2024-04",
+  "dev": 0,
+  "rc": 4,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2024-05",
+  "dev": 0,
+  "rc": 4,
+  "store": 4,
+  "other": 0
+ },
+ {
+  "month": "2024-06",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2024-07",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2024-08",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2024-09",
+  "dev": 0,
+  "rc": 5,
+  "store": 5,
+  "other": 0
+ },
+ {
+  "month": "2024-11",
+  "dev": 0,
+  "rc": 4,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2025-01",
+  "dev": 0,
+  "rc": 1,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2025-02",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2025-03",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2025-05",
+  "dev": 0,
+  "rc": 4,
+  "store": 4,
+  "other": 0
+ },
+ {
+  "month": "2025-06",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2025-07",
+  "dev": 0,
+  "rc": 2,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2025-08",
+  "dev": 0,
+  "rc": 1,
+  "store": 1,
+  "other": 0
+ },
+ {
+  "month": "2025-09",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2025-10",
+  "dev": 0,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2025-11",
+  "dev": 0,
+  "rc": 2,
+  "store": 1,
+  "other": 0
+ },
+ {
+  "month": "2025-12",
+  "dev": 0,
+  "rc": 4,
+  "store": 2,
+  "other": 1
+ },
+ {
+  "month": "2026-01",
+  "dev": 0,
+  "rc": 3,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2026-02",
+  "dev": 7,
+  "rc": 2,
+  "store": 1,
+  "other": 0
+ },
+ {
+  "month": "2026-03",
+  "dev": 5,
+  "rc": 3,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2026-04",
+  "dev": 13,
+  "rc": 3,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2026-05",
+  "dev": 17,
+  "rc": 4,
+  "store": 2,
+  "other": 0
+ },
+ {
+  "month": "2026-06",
+  "dev": 9,
+  "rc": 7,
+  "store": 4,
+  "other": 0
+ },
+ {
+  "month": "2026-07",
+  "dev": 36,
+  "rc": 5,
+  "store": 3,
+  "other": 0
+ },
+ {
+  "month": "2026-08",
+  "dev": 17,
+  "rc": 8,
+  "store": 6,
+  "other": 0
+ },
+ {
+  "month": "2026-09",
+  "dev": 14,
+  "rc": 6,
+  "store": 5,
+  "other": 0
+ },
+ {
+  "month": "2026-10",
+  "dev": 12,
+  "rc": 2,
+  "store": 1,
+  "other": 0
+ }
+]

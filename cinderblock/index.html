@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cinderblock Mobile in numbers</title>
+    <meta name="description" content="3,007 reviewed changes (509 in 2026) · 435 builds (202 in 2026) · 2,331 commits · 359k lines of Dart · 34 offline-synced domains. Latest: v4.5.70." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Upcode stats" />
+    <meta property="og:url" content="https://stats.upcode.dev/cinderblock/" />
+    <meta property="og:title" content="Cinderblock Mobile in numbers" />
+    <meta property="og:description" content="3,007 reviewed changes (509 in 2026) · 435 builds (202 in 2026) · 2,331 commits · 359k lines of Dart · 34 offline-synced domains. Latest: v4.5.70." />
+    <meta property="og:image" content="https://stats.upcode.dev/cinderblock/og.png?v=06c8d8497c" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Cinderblock Mobile in numbers: merged MRs, tagged builds, commits and Dart lines" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" />
+    <script type="module" crossorigin src="/assets/cinderblock-BCfP3NWM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-DQh9pfPV.css">
+  </head>
+  <body>
+    <main class="page">
+      <nav class="site-bar">
+        <span class="brand"><span class="tile" role="img" aria-label="upcode"></span><span class="word">upcode</span></span>
+        <span class="meta" id="meta"></span>
+      </nav>
+      <header class="title-block">
+        <span class="pill">Cinderblock · Mobile app</span>
+        <h1>Cinderblock Mobile in numbers</h1>
+        <p id="takeaway" class="loading">Loading…</p>
+      </header>
+
+      <div class="figures" id="figures">
+        <div class="figure"><span class="label">Reviewed changes</span><span class="value" data-total="reviews">—</span><span class="note" data-note="reviews"></span></div>
+        <div class="figure"><span class="label">Tagged builds</span><span class="value" data-total="tags">—</span><span class="note" data-note="tags"></span></div>
+        <div class="figure"><span class="label">Commits</span><span class="value" data-total="commits">—</span><span class="note" data-note="commits"></span></div>
+        <div class="figure"><span class="label">Dart lines</span><span class="value" data-total="dart_lines">—</span><span class="note" data-note="dart_lines"></span></div>
+        <div class="figure"><span class="label">Offline-synced domains</span><span class="value" data-total="synced_domains">—</span><span class="note" data-note="synced_domains"></span></div>
+        <div class="figure"><span class="label">Test files</span><span class="value" data-total="test_files">—</span><span class="note" data-note="test_files"></span></div>
+      </div>
+
+      <section>
+        <h2><span class="ref">A-1</span>Shipping</h2>
+        <div class="sheets">
+          <div class="sheet">
+            <h3>Builds per month</h3>
+            <p class="caption">Every tag cut for a build: dev (+main), release candidate (+rcN) and store release.</p>
+            <div class="legend" id="builds-legend"></div>
+            <div class="chart tall" id="builds-chart"></div>
+          </div>
+          <div class="sheet">
+            <h3>Reviewed changes per month</h3>
+            <p class="caption">Merged GitLab MRs and GitHub PRs since November 2018; reviews moved to GitHub from mid-2022 to late 2024.</p>
+            <div class="legend" id="mrs-legend"></div>
+            <div class="chart tall" id="mrs-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="ref">A-2</span>Activity</h2>
+        <div class="sheets">
+          <div class="sheet">
+            <h3>Commits per month</h3>
+            <p class="caption">Non-merge commits since git history begins in May 2022.</p>
+            <div class="chart" id="commits-chart"></div>
+          </div>
+          <div class="sheet">
+            <h3>Lines added and removed per month</h3>
+            <p class="caption">Hand-written files only; generated code, vendored packages, lock files and coverage reports are left out.</p>
+            <div class="legend" id="churn-legend"></div>
+            <div class="chart" id="churn-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="ref">A-3</span>Code</h2>
+        <div class="sheets">
+          <div class="sheet">
+            <h3>Where the app code lives</h3>
+            <p class="caption">Lines of hand-written Dart per folder under lib/src.</p>
+            <div class="chart" id="areas-chart"></div>
+          </div>
+          <div class="sheet">
+            <h3>Languages</h3>
+            <p class="caption">Tracked, hand-written files.</p>
+            <div class="table-wrap">
+              <table id="langs-table">
+                <thead><tr><th>Language</th><th class="num">Files</th><th class="num">Lines</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">Generated from the cb-mobile repository and its GitLab project.</footer>
+    </main>
+  </body>
+</html>

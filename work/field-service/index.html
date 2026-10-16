@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Field-service case study</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="How upcode built an offline-first Flutter platform for construction contractors: local-first sync, a persisted write queue and 400+ releases." />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="upcode" />
+    <meta property="og:url" content="https://stats.upcode.dev/work/field-service/" />
+    <meta property="og:title" content="Offline-first field service, built to last" />
+    <meta property="og:description" content="A Flutter platform for construction crews that keeps working with no signal." />
+    <meta property="og:image" content="https://stats.upcode.dev/work/shots/field-service.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" />
+    <link rel="stylesheet" crossorigin href="/assets/style-DQh9pfPV.css">
+    <link rel="stylesheet" crossorigin href="/assets/work-Bw4uu6Qb.css">
+  </head>
+  <body>
+    <main class="page case">
+      <nav class="site-bar">
+        <a class="brand" href="/work/"><span class="tile" role="img" aria-label="upcode"></span><span class="word">upcode</span></a>
+        <a class="cta" href="/work/#contact">Book a call</a>
+      </nav>
+
+      <header class="title-block">
+        <span class="pill">Case study · 2022 – now</span>
+        <h1>Field service that works with no signal.</h1>
+        <p>A Flutter platform for construction contractors: jobs, estimates, invoices, scheduling,
+          timesheets, forms and card payments, used by crews on job sites where the connection comes
+          and goes. We have built and run the mobile app since 2022.</p>
+      </header>
+
+      <figure class="case-shot">
+        <img src="/work/shots/field-service.png" alt="Illustration of the field-service app screens" width="1200" height="750" />
+      </figure>
+
+      <div class="figures">
+        <div class="figure"><span class="label">Builds shipped</span><span class="value">435</span><span class="note">133 to the stores, the rest to testers</span></div>
+        <div class="figure"><span class="label">Offline domains</span><span class="value">34</span><span class="note">read and written with no signal</span></div>
+        <div class="figure"><span class="label">Screens</span><span class="value">195</span><span class="note">one Flutter codebase</span></div>
+        <div class="figure"><span class="label">Platforms</span><span class="value">4</span><span class="note">iOS · Android, plus macOS · Windows for QA</span></div>
+      </div>
+
+      <section>
+        <h2><span class="ref">C-1</span>The problem</h2>
+        <div class="prose">
+          <p>Contractors work in basements, new builds and rural sites. A crew lead who can't open a
+            job, clock in or take a payment because the signal dropped stops using the app, and goes
+            back to paper. The app had to treat the network as optional: every screen readable
+            offline, every change saved locally and delivered later, in the right order.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="ref">C-2</span>How it works</h2>
+        <div class="steps">
+          <article>
+            <h3>Local first, always</h3>
+            <p>Every read shows what is stored on the device first, then refreshes from the server in
+              the background and updates only if something changed. Screens open instantly, online or
+              not, and nothing errors when the signal is gone.</p>
+          </article>
+          <article>
+            <h3>A write queue that survives anything</h3>
+            <p>Changes are operations in a queue persisted to SQLite, so they survive the app being
+              killed. Each one knows what it depends on: an invoice line waits for its invoice, a
+              payment for both. 138 operation types, up to three running at once so one large photo
+              upload never holds up a clock-in.</p>
+          </article>
+          <article>
+            <h3>Connectivity you can trust</h3>
+            <p>Online and offline are decided by whether the app's own server answers, not by pinging
+              the internet. Three failed requests in a row switch to offline; a health check every
+              five seconds switches back, and the queue drains the moment it does.</p>
+          </article>
+          <article>
+            <h3>Storage that respects old data</h3>
+            <p>Records are stored as Protobuf generated from the app's models, with field numbers
+              pinned in a ledger so a schema change can never misread what is already on a
+              user's phone. 141 message types, still readable after every schema change.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="ref">C-3</span>Shipping it</h2>
+        <div class="prose">
+          <p>Every change is reviewed, and every merge to the main branch can become a build for
+            testers. Releases move from dev to release candidate to the stores through scripted CI on
+            our own Mac build machines, and Dart-only fixes go out as code-push patches, reaching
+            users in hours instead of waiting on store review.</p>
+          <ul>
+            <li>2,300+ commits since May 2022, 155 unit and widget test files and 10 end-to-end
+              suites covering offline sync, invoices, jobs and timesheets.</li>
+            <li>Card payments on invoices, including Tap to Pay, so the phone itself takes a
+              contactless card on site.</li>
+            <li>macOS and Windows builds of the same codebase, used by the team and by AI agents to
+              test without a phone.</li>
+            <li>A one-tap "send my data to support" that uploads a copy of the local database, so
+              offline bugs can be reproduced exactly.</li>
+          </ul>
+          <p class="section-note">Release volume has grown with the product: 75 builds in 2023, 202 so far in 2026.</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div>
+          <h2 class="contact-title">Building something that has to work in the field?</h2>
+          <p>We'll tell you how we'd approach it.</p>
+        </div>
+        <a class="cta" href="/work/#contact">Book a call</a>
+      </section>
+
+      <footer>The client is left unnamed on purpose. The screens shown are illustrations, not the client's app.</footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="/Users/long1eu/IdeaProjects/upcode/web/res/themes/green/monogram.png"
+   sodipodi:docname="monogram.svg"
+   inkscape:version="1.0beta1 (32d4812, 2019-09-19)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 16.933333 16.933334"
+   height="64"
+   width="64">
+  <defs
+     id="defs2">
+    <clipPath
+       id="clipPath855"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path853"
+         d="M 0,500 H 500 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath867"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path865"
+         d="M 0,500 H 500 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath879"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path877"
+         d="m 393.495,282.236 h 43.417 V 189.82 h -43.417 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath911"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path909"
+         d="M 55.6486,238.019 H 108 V 186.88 H 55.6486 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath943"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path941"
+         d="M 0,500 H 500 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath995"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path993"
+         d="M 0,500 H 500 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1031"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1029"
+         d="M 0,500 H 500 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1043"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1041"
+         d="m 136.984,214.863 h 37.099 v -60.946 h -37.099 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1063"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1061"
+         d="m 162.754,279.159 h 23.813 v -60.713 h -23.813 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1079"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1077"
+         d="m 176.936,305.036 h 69.06 v -89.161 h -69.06 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1095"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1093"
+         d="m 185.026,298.034 h 53.96 v -75.16 h -53.96 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1111"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1109"
+         d="m 183.936,298.034 h 49.01 v -71.77 h -49.01 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1127"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1125"
+         d="M 0,500 H 500 V 0 H 0 Z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="949"
+     inkscape:window-width="1600"
+     showborder="true"
+     showguides="false"
+     inkscape:snap-smooth-nodes="true"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="svg8"
+     inkscape:document-units="mm"
+     inkscape:cy="560"
+     inkscape:cx="400"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1" />
+  <path
+     id="path860"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999999999999716px;line-height:1.25;font-family:Righteous;-inkscape-font-specification:Righteous;opacity:1;fill:#27debf;stroke-width:0.264584;stop-opacity:1;fill-opacity:1"
+     d="m 11.671927,2.7160931 c -0.309179,0 -0.615384,0.038871 -0.918618,0.116624 -0.303228,0.077748 -0.597535,0.1853976 -0.8829295,0.3229505 -0.225938,0.1063747 -0.4456977,0.2312902 -0.6599737,0.372854 V 3.0659591 h -1.846138 -0.588626 v 5.3107672 c 0,0.2571671 -0.04756,0.508348 -0.142698,0.753556 -0.09513,0.2392241 -0.225934,0.454524 -0.392413,0.6459011 -0.1664779,0.19138 -0.362691,0.3468776 -0.588622,0.4664876 -0.2199909,0.113629 -0.454843,0.170447 -0.704561,0.170447 -0.255667,0 -0.4964729,-0.04485 -0.722407,-0.134567 C 4.0049498,10.188841 3.8117208,10.05727 3.6452428,9.8838364 3.4787608,9.7103994 3.3449768,9.4980894 3.2439021,9.2469043 3.1487704,8.9897383 3.101205,8.6996774 3.101205,8.3767263 V 3.0659591 H 0.67536061 v 5.3107672 c 0,0.687772 0.1100032,1.3097521 0.32999369,1.8659447 0.2259345,0.550219 0.5321327,1.019698 0.9186053,1.408433 0.3924164,0.382758 0.8472659,0.678796 1.3645381,0.888119 0.5172761,0.209322 1.0702221,0.313977 1.6588501,0.313977 0.267556,0 0.529166,-0.03588 0.7848281,-0.107644 0.2616129,-0.06579 0.5142979,-0.155496 0.7580749,-0.269132 0.09722,-0.0477 0.191961,-0.0991 0.285391,-0.152504 v 4.009988 h 2.452602 v -4.306027 c 0.184316,0.107645 0.374579,0.21231 0.5707887,0.313982 0.2021545,0.101679 0.4043075,0.19437 0.6064605,0.278097 0.208101,0.07775 0.416198,0.140546 0.624298,0.188391 0.214045,0.04785 0.428089,0.07178 0.642136,0.07178 0.671863,0 1.302104,-0.116628 1.890726,-0.349866 0.59457,-0.233242 1.111846,-0.568157 1.551825,-1.004741 0.445928,-0.44256 0.796723,-0.977824 1.052388,-1.6057873 0.255667,-0.633945 0.383496,-1.345633 0.383496,-2.135077 0,-0.759533 -0.127833,-1.4502922 -0.383496,-2.072273 C 15.911201,5.084409 15.560406,4.5491414 15.114478,4.1065804 14.674499,3.6640155 14.157223,3.3231261 13.562653,3.0839014 12.974031,2.8386983 12.34379,2.7160931 11.671927,2.7160931 Z m 0,2.4580237 c 0.332956,0 0.648078,0.059809 0.945363,0.1794195 0.297285,0.1196106 0.555917,0.2930481 0.775908,0.5203089 0.219998,0.2212824 0.392413,0.4934011 0.517277,0.8163511 0.130805,0.3229551 0.196205,0.6877681 0.196205,1.0944481 0,0.3887419 -0.0654,0.7445869 -0.196205,1.0675409 -0.124861,0.32295 -0.297279,0.5980601 -0.517277,0.825321 -0.219991,0.2272631 -0.478623,0.4036877 -0.775908,0.5292807 -0.297285,0.125598 -0.612407,0.188392 -0.945363,0.188392 -0.332964,0 -0.648083,-0.0628 -0.945368,-0.188392 C 10.435221,10.08119 10.179555,9.9047694 9.9595675,9.6775063 9.7395765,9.4502454 9.5641809,9.1751353 9.4333668,8.8521853 9.3085198,8.5292313 9.2460808,8.1733863 9.2460808,7.7846444 c 0,-0.40668 0.06243,-0.771493 0.187286,-1.0944481 C 9.5641848,6.3672463 9.7395765,6.0951276 9.9595675,5.8738452 10.179555,5.6465844 10.435221,5.4731469 10.726559,5.3535363 11.023844,5.2339259 11.338963,5.1741168 11.671927,5.1741168 Z"
+     inkscape:connector-curvature="0" />
+</svg>

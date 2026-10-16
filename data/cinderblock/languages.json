@@ -1,0 +1,62 @@
+[
+ {
+  "language": "Dart",
+  "files": 3150,
+  "lines": 359355
+ },
+ {
+  "language": "Markdown",
+  "files": 23,
+  "lines": 4055
+ },
+ {
+  "language": "YAML",
+  "files": 22,
+  "lines": 2544
+ },
+ {
+  "language": "Shell",
+  "files": 10,
+  "lines": 603
+ },
+ {
+  "language": "C++",
+  "files": 4,
+  "lines": 477
+ },
+ {
+  "language": "Swift",
+  "files": 5,
+  "lines": 193
+ },
+ {
+  "language": "TypeScript",
+  "files": 1,
+  "lines": 185
+ },
+ {
+  "language": "Objective-C",
+  "files": 6,
+  "lines": 176
+ },
+ {
+  "language": "JavaScript",
+  "files": 1,
+  "lines": 164
+ },
+ {
+  "language": "Gradle",
+  "files": 3,
+  "lines": 157
+ },
+ {
+  "language": "Kotlin",
+  "files": 1,
+  "lines": 125
+ },
+ {
+  "language": "Inno Setup",
+  "files": 1,
+  "lines": 64
+ }
+]
