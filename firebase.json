@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "site": "upcode-root",
+    "public": "dist",
+    "cleanUrls": true,
+    "ignore": ["firebase.json", "**/.*", "index.html", "CNAME", "cinderblock/**", "data/**"],
+    "rewrites": [{ "source": "/", "destination": "/work/index.html" }]
+  }
+}
