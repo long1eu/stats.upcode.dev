@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         index: resolve(import.meta.dirname, 'index.html'),
         cinderblock: resolve(import.meta.dirname, 'cinderblock/index.html'),
+        cinderblockWebSpeed: resolve(import.meta.dirname, 'cinderblock/web-speed/index.html'),
         work: resolve(import.meta.dirname, 'work/index.html'),
         fieldService: resolve(import.meta.dirname, 'work/field-service/index.html'),
       },
