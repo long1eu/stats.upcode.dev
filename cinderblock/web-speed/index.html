@@ -113,23 +113,23 @@
   <body>
 <main>
   <header>
-    <h1>The new web app is faster to use than today's web app, and slower to open the first time</h1>
-    <p class="meta">Measured 18 November 2026 on the dev site (version 4.10.10) against the current web app on staging: same backend, same test account and data, same browser and machine. Median of 3 runs each.</p>
+    <h1>The new web app is faster than today's web app at signing in and at everything after it</h1>
+    <p class="meta">Measured 19 November 2026 on the dev site (version 4.10.10) against the current web app on staging: same backend, same test account and data, same browser and machine. Median of 3 runs each.</p>
   </header>
 
   <section aria-label="Summary">
     <div class="points">
       <div class="point">
-        <span class="big win">0.06–0.19 s</span>
-        <span class="what">to open a list, a job or an invoice, against 0.8–1.5 s in today's web app</span>
+        <span class="big win">0.06–0.26 s</span>
+        <span class="what">to open a list, a job or an invoice, against 0.85–1.6 s in today's web app</span>
       </div>
       <div class="point">
-        <span class="big win">1.1 s</span>
-        <span class="what">to reopen the app, against 3.0 s. Since today it stays in the browser's cache.</span>
+        <span class="big win">1.9 s</span>
+        <span class="what">to sign in and see the home screen, against 2.7 s. On a slow connection 3.0 s against 6.5 s.</span>
       </div>
       <div class="point">
-        <span class="big gap">+1.2 s</span>
-        <span class="what">slower sign-in on a normal connection (3.9 s against 2.7 s). The first visit is slower too, most on a slow connection.</span>
+        <span class="big gap">4.2 MB</span>
+        <span class="what">for a first visit, against 3.2 MB. On a slow connection that is 32 s against 18 s.</span>
       </div>
     </div>
   </section>
@@ -148,44 +148,52 @@
         </thead>
         <tbody>
           <tr class="group"><td colspan="4">Using it, on a normal connection</td></tr>
-          <tr><td>Open the schedule</td><td class="num">0.76 s</td><td class="num">0.17 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Open the jobs list</td><td class="num">0.97 s</td><td class="num">0.15 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Open a job</td><td class="num">1.22 s</td><td class="num">0.07 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Open the invoices</td><td class="num">1.35 s</td><td class="num">0.06 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Open an invoice</td><td class="num">1.48 s</td><td class="num">0.19 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Get an invoice's PDF<span class="sub">The server takes about 1.1 s in both.</span></td><td class="num">1.25 s</td><td class="num">2.27 s</td><td><span class="chip ember">Today's</span></td></tr>
+          <tr><td>Open the schedule</td><td class="num">0.85 s</td><td class="num">0.26 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Open the jobs list</td><td class="num">1.02 s</td><td class="num">0.06 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Open a job</td><td class="num">1.24 s</td><td class="num">0.07 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Open the invoices</td><td class="num">1.57 s</td><td class="num">0.06 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Open an invoice</td><td class="num">1.63 s</td><td class="num">0.19 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Get an invoice's PDF<span class="sub">Two taps in the new app. The one-tap button below closes this.</span></td><td class="num">1.27 s</td><td class="num">2.39 s</td><td><span class="chip ember">Today's</span></td></tr>
           <tr class="group"><td colspan="4">Getting in, on a normal connection</td></tr>
-          <tr><td>First visit, to the sign-in page<span class="sub">Download: 3.2 MB against 4.8 MB</span></td><td class="num">1.85 s</td><td class="num">2.19 s</td><td><span class="chip ember">Today's</span></td></tr>
-          <tr><td>Sign in, to the home screen<span class="sub">Requests: 40 against 130</span></td><td class="num">2.69 s</td><td class="num">3.87 s</td><td><span class="chip ember">Today's</span></td></tr>
-          <tr><td>Come back to it later (reload)<span class="sub">Download: 25 KB against 114 KB</span></td><td class="num">2.95 s</td><td class="num">1.10 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>First visit, to the sign-in page<span class="sub">Download: 3.2 MB against 4.2 MB. Run to run, both vary by about a second.</span></td><td class="num">3.37 s</td><td class="num">2.83 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Sign in, to the home screen</td><td class="num">2.70 s</td><td class="num">1.87 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Come back to it later (reload)</td><td class="num">3.25 s</td><td class="num">1.27 s</td><td><span class="chip new">New</span></td></tr>
           <tr class="group"><td colspan="4">Getting in, on a slow mobile connection (Fast 3G)</td></tr>
-          <tr><td>First visit, to the sign-in page</td><td class="num">18.0 s</td><td class="num">35.8 s</td><td><span class="chip ember">Today's</span></td></tr>
-          <tr><td>Sign in, to the home screen</td><td class="num">6.5 s</td><td class="num">4.4 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Come back to it later (reload)</td><td class="num">7.3 s</td><td class="num">4.2 s</td><td><span class="chip new">New</span></td></tr>
-          <tr><td>Open a job</td><td class="num">2.93 s</td><td class="num">0.08 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>First visit, to the sign-in page</td><td class="num">18.0 s</td><td class="num">32.0 s</td><td><span class="chip ember">Today's</span></td></tr>
+          <tr><td>Sign in, to the home screen</td><td class="num">6.5 s</td><td class="num">3.0 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Come back to it later (reload)</td><td class="num">7.3 s</td><td class="num">4.1 s</td><td><span class="chip new">New</span></td></tr>
+          <tr><td>Open a job</td><td class="num">2.93 s</td><td class="num">0.06 s</td><td><span class="chip new">New</span></td></tr>
           <tr class="group"><td colspan="4">Sitting open</td></tr>
-          <tr><td>Computer's work while nothing happens</td><td class="num">0.3%</td><td class="num">0.6%</td><td><span class="chip even">Even</span></td></tr>
-          <tr><td>Browser memory after the walk-through</td><td class="num">61 MB</td><td class="num">113 MB</td><td><span class="chip ember">Today's</span></td></tr>
+          <tr><td>Computer's work while nothing happens</td><td class="num">0.5%</td><td class="num">0.7%</td><td><span class="chip even">Even</span></td></tr>
+          <tr><td>Browser memory after the walk-through</td><td class="num">61 MB</td><td class="num">111 MB</td><td><span class="chip ember">Today's</span></td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
   <section>
-    <h2>Where today's web app still wins, and the plan</h2>
+    <h2>Where today's web app still wins</h2>
     <div class="gaps">
       <div class="gapitem">
-        <div><h3>First visit</h3><span class="figure">2.2 s against 1.9 s; 36 s against 18 s on Fast 3G</span></div>
-        <p>The new app is a bigger download. Since today, the browser keeps it, so only the first visit and the first visit after a new version pay for it. Possible next step: load the parts of the app a screen needs when it opens, not all of it up front.</p>
+        <div><h3>First visit</h3><span class="figure">4.2 MB against 3.2 MB; 32 s against 18 s on Fast 3G</span></div>
+        <p>Down from 4.8 MB this week: smaller fonts, and screens people open less often (estimates, invoices, settings) now download when first opened. Most of what is left is Flutter's drawing engine (1.5 MB) and the app itself. After the first visit, the browser keeps it all.</p>
       </div>
       <div class="gapitem">
-        <div><h3>Sign-in</h3><span class="figure">3.9 s against 2.7 s</span></div>
-        <p>Today's fix cut sign-in from 206 requests to 130. Several lists are still asked for more than once while the app fills itself in. Possible next step: find where those requests overlap and drop the repeats.</p>
+        <div><h3>Invoice PDF</h3><span class="figure">2.4 s against 1.3 s</span></div>
+        <p>The server answers equally fast to both. The PDF is two taps away in the new app. A one-tap button is ready and needs your OK (below).</p>
       </div>
       <div class="gapitem">
-        <div><h3>Invoice PDF</h3><span class="figure">2.3 s against 1.3 s</span></div>
-        <p>The server answers equally fast to both. The difference is the menu: the PDF is two taps away in the new app. A PDF button on the invoice would close most of the gap.</p>
+        <div><h3>Memory</h3><span class="figure">111 MB against 61 MB</span></div>
+        <p>Mostly the fixed cost of Flutter's code and screen trees, not the company's data. It does not slow the app down on a normal computer.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="ask">
+    <h2>Needs your OK: a PDF button on the invoice</h2>
+    <p>A download button beside the invoice's ⋮ menu gets the PDF in one tap. Download PDF stays in the menu too. It shows on phones as well.</p>
+    <div class="strip">
+      <img alt="The invoice header before, with the menu button only, and after, with a download button beside it" src="data:image/png;base64,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">
     </div>
   </section>
 
