@@ -1,0 +1,380 @@
+[
+ {
+  "month": "2022-05",
+  "commits": 8,
+  "version_bumps": 0,
+  "lines_added": 4584,
+  "lines_removed": 275
+ },
+ {
+  "month": "2022-06",
+  "commits": 2,
+  "version_bumps": 0,
+  "lines_added": 5207,
+  "lines_removed": 296
+ },
+ {
+  "month": "2022-07",
+  "commits": 13,
+  "version_bumps": 0,
+  "lines_added": 16777,
+  "lines_removed": 3080
+ },
+ {
+  "month": "2022-08",
+  "commits": 33,
+  "version_bumps": 0,
+  "lines_added": 32429,
+  "lines_removed": 6699
+ },
+ {
+  "month": "2022-09",
+  "commits": 16,
+  "version_bumps": 0,
+  "lines_added": 16491,
+  "lines_removed": 6981
+ },
+ {
+  "month": "2022-10",
+  "commits": 37,
+  "version_bumps": 0,
+  "lines_added": 27860,
+  "lines_removed": 18691
+ },
+ {
+  "month": "2022-11",
+  "commits": 86,
+  "version_bumps": 0,
+  "lines_added": 21586,
+  "lines_removed": 12625
+ },
+ {
+  "month": "2022-12",
+  "commits": 118,
+  "version_bumps": 0,
+  "lines_added": 16818,
+  "lines_removed": 8936
+ },
+ {
+  "month": "2023-01",
+  "commits": 63,
+  "version_bumps": 0,
+  "lines_added": 11591,
+  "lines_removed": 6193
+ },
+ {
+  "month": "2023-02",
+  "commits": 59,
+  "version_bumps": 0,
+  "lines_added": 17842,
+  "lines_removed": 6050
+ },
+ {
+  "month": "2023-03",
+  "commits": 61,
+  "version_bumps": 0,
+  "lines_added": 9875,
+  "lines_removed": 3715
+ },
+ {
+  "month": "2023-04",
+  "commits": 51,
+  "version_bumps": 0,
+  "lines_added": 8742,
+  "lines_removed": 5429
+ },
+ {
+  "month": "2023-05",
+  "commits": 62,
+  "version_bumps": 0,
+  "lines_added": 17798,
+  "lines_removed": 6723
+ },
+ {
+  "month": "2023-06",
+  "commits": 58,
+  "version_bumps": 0,
+  "lines_added": 23595,
+  "lines_removed": 7161
+ },
+ {
+  "month": "2023-07",
+  "commits": 52,
+  "version_bumps": 0,
+  "lines_added": 5238,
+  "lines_removed": 2274
+ },
+ {
+  "month": "2023-08",
+  "commits": 75,
+  "version_bumps": 0,
+  "lines_added": 26360,
+  "lines_removed": 17824
+ },
+ {
+  "month": "2023-09",
+  "commits": 37,
+  "version_bumps": 0,
+  "lines_added": 2482,
+  "lines_removed": 1906
+ },
+ {
+  "month": "2023-10",
+  "commits": 66,
+  "version_bumps": 0,
+  "lines_added": 20060,
+  "lines_removed": 5471
+ },
+ {
+  "month": "2023-11",
+  "commits": 37,
+  "version_bumps": 0,
+  "lines_added": 3831,
+  "lines_removed": 2198
+ },
+ {
+  "month": "2023-12",
+  "commits": 17,
+  "version_bumps": 0,
+  "lines_added": 572,
+  "lines_removed": 360
+ },
+ {
+  "month": "2024-01",
+  "commits": 45,
+  "version_bumps": 0,
+  "lines_added": 48849,
+  "lines_removed": 40959
+ },
+ {
+  "month": "2024-02",
+  "commits": 53,
+  "version_bumps": 0,
+  "lines_added": 8093,
+  "lines_removed": 3760
+ },
+ {
+  "month": "2024-03",
+  "commits": 22,
+  "version_bumps": 0,
+  "lines_added": 1123,
+  "lines_removed": 795
+ },
+ {
+  "month": "2024-04",
+  "commits": 46,
+  "version_bumps": 0,
+  "lines_added": 12014,
+  "lines_removed": 10460
+ },
+ {
+  "month": "2024-05",
+  "commits": 49,
+  "version_bumps": 0,
+  "lines_added": 9350,
+  "lines_removed": 7958
+ },
+ {
+  "month": "2024-06",
+  "commits": 29,
+  "version_bumps": 0,
+  "lines_added": 9744,
+  "lines_removed": 5011
+ },
+ {
+  "month": "2024-07",
+  "commits": 40,
+  "version_bumps": 0,
+  "lines_added": 16410,
+  "lines_removed": 4979
+ },
+ {
+  "month": "2024-08",
+  "commits": 29,
+  "version_bumps": 0,
+  "lines_added": 5390,
+  "lines_removed": 2165
+ },
+ {
+  "month": "2024-09",
+  "commits": 38,
+  "version_bumps": 0,
+  "lines_added": 5469,
+  "lines_removed": 4624
+ },
+ {
+  "month": "2024-10",
+  "commits": 30,
+  "version_bumps": 0,
+  "lines_added": 20308,
+  "lines_removed": 11362
+ },
+ {
+  "month": "2024-11",
+  "commits": 27,
+  "version_bumps": 0,
+  "lines_added": 8329,
+  "lines_removed": 6914
+ },
+ {
+  "month": "2024-12",
+  "commits": 7,
+  "version_bumps": 0,
+  "lines_added": 10525,
+  "lines_removed": 6202
+ },
+ {
+  "month": "2025-01",
+  "commits": 42,
+  "version_bumps": 0,
+  "lines_added": 9426,
+  "lines_removed": 6033
+ },
+ {
+  "month": "2025-02",
+  "commits": 25,
+  "version_bumps": 0,
+  "lines_added": 9115,
+  "lines_removed": 3494
+ },
+ {
+  "month": "2025-03",
+  "commits": 9,
+  "version_bumps": 0,
+  "lines_added": 3262,
+  "lines_removed": 1759
+ },
+ {
+  "month": "2025-04",
+  "commits": 9,
+  "version_bumps": 0,
+  "lines_added": 20951,
+  "lines_removed": 11420
+ },
+ {
+  "month": "2025-05",
+  "commits": 17,
+  "version_bumps": 0,
+  "lines_added": 18682,
+  "lines_removed": 11670
+ },
+ {
+  "month": "2025-06",
+  "commits": 26,
+  "version_bumps": 0,
+  "lines_added": 13349,
+  "lines_removed": 12334
+ },
+ {
+  "month": "2025-07",
+  "commits": 18,
+  "version_bumps": 0,
+  "lines_added": 8158,
+  "lines_removed": 6211
+ },
+ {
+  "month": "2025-08",
+  "commits": 19,
+  "version_bumps": 0,
+  "lines_added": 5694,
+  "lines_removed": 4884
+ },
+ {
+  "month": "2025-09",
+  "commits": 42,
+  "version_bumps": 0,
+  "lines_added": 19307,
+  "lines_removed": 14467
+ },
+ {
+  "month": "2025-10",
+  "commits": 29,
+  "version_bumps": 0,
+  "lines_added": 12149,
+  "lines_removed": 6875
+ },
+ {
+  "month": "2025-11",
+  "commits": 30,
+  "version_bumps": 0,
+  "lines_added": 10103,
+  "lines_removed": 6673
+ },
+ {
+  "month": "2025-12",
+  "commits": 45,
+  "version_bumps": 0,
+  "lines_added": 8857,
+  "lines_removed": 7036
+ },
+ {
+  "month": "2026-01",
+  "commits": 41,
+  "version_bumps": 0,
+  "lines_added": 9393,
+  "lines_removed": 7402
+ },
+ {
+  "month": "2026-02",
+  "commits": 52,
+  "version_bumps": 2,
+  "lines_added": 13478,
+  "lines_removed": 11702
+ },
+ {
+  "month": "2026-03",
+  "commits": 51,
+  "version_bumps": 5,
+  "lines_added": 6846,
+  "lines_removed": 4682
+ },
+ {
+  "month": "2026-04",
+  "commits": 74,
+  "version_bumps": 13,
+  "lines_added": 10104,
+  "lines_removed": 6794
+ },
+ {
+  "month": "2026-05",
+  "commits": 88,
+  "version_bumps": 17,
+  "lines_added": 59554,
+  "lines_removed": 8660
+ },
+ {
+  "month": "2026-06",
+  "commits": 48,
+  "version_bumps": 9,
+  "lines_added": 12478,
+  "lines_removed": 11037
+ },
+ {
+  "month": "2026-07",
+  "commits": 89,
+  "version_bumps": 34,
+  "lines_added": 22499,
+  "lines_removed": 9591
+ },
+ {
+  "month": "2026-08",
+  "commits": 75,
+  "version_bumps": 16,
+  "lines_added": 26479,
+  "lines_removed": 20359
+ },
+ {
+  "month": "2026-09",
+  "commits": 71,
+  "version_bumps": 15,
+  "lines_added": 20149,
+  "lines_removed": 23724
+ },
+ {
+  "month": "2026-10",
+  "commits": 65,
+  "version_bumps": 12,
+  "lines_added": 9270,
+  "lines_removed": 1538
+ }
+]

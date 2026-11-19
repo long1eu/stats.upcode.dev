@@ -1,0 +1,477 @@
+[
+ {
+  "month": "2018-11",
+  "merged_mrs": 1,
+  "merged_prs": 0
+ },
+ {
+  "month": "2018-12",
+  "merged_mrs": 20,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-01",
+  "merged_mrs": 19,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-02",
+  "merged_mrs": 24,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-03",
+  "merged_mrs": 33,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-04",
+  "merged_mrs": 39,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-05",
+  "merged_mrs": 43,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-06",
+  "merged_mrs": 15,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-07",
+  "merged_mrs": 8,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-08",
+  "merged_mrs": 18,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-09",
+  "merged_mrs": 38,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-10",
+  "merged_mrs": 53,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-11",
+  "merged_mrs": 44,
+  "merged_prs": 0
+ },
+ {
+  "month": "2019-12",
+  "merged_mrs": 17,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-01",
+  "merged_mrs": 21,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-02",
+  "merged_mrs": 14,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-03",
+  "merged_mrs": 31,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-04",
+  "merged_mrs": 24,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-05",
+  "merged_mrs": 3,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-06",
+  "merged_mrs": 5,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-07",
+  "merged_mrs": 1,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-09",
+  "merged_mrs": 5,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-10",
+  "merged_mrs": 7,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-11",
+  "merged_mrs": 24,
+  "merged_prs": 0
+ },
+ {
+  "month": "2020-12",
+  "merged_mrs": 9,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-01",
+  "merged_mrs": 18,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-02",
+  "merged_mrs": 14,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-03",
+  "merged_mrs": 8,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-04",
+  "merged_mrs": 6,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-05",
+  "merged_mrs": 12,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-06",
+  "merged_mrs": 7,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-07",
+  "merged_mrs": 21,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-08",
+  "merged_mrs": 10,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-09",
+  "merged_mrs": 26,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-10",
+  "merged_mrs": 28,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-11",
+  "merged_mrs": 23,
+  "merged_prs": 0
+ },
+ {
+  "month": "2021-12",
+  "merged_mrs": 21,
+  "merged_prs": 0
+ },
+ {
+  "month": "2022-01",
+  "merged_mrs": 24,
+  "merged_prs": 0
+ },
+ {
+  "month": "2022-02",
+  "merged_mrs": 28,
+  "merged_prs": 0
+ },
+ {
+  "month": "2022-03",
+  "merged_mrs": 15,
+  "merged_prs": 0
+ },
+ {
+  "month": "2022-04",
+  "merged_mrs": 42,
+  "merged_prs": 0
+ },
+ {
+  "month": "2022-05",
+  "merged_mrs": 60,
+  "merged_prs": 3
+ },
+ {
+  "month": "2022-06",
+  "merged_mrs": 20,
+  "merged_prs": 2
+ },
+ {
+  "month": "2022-07",
+  "merged_mrs": 1,
+  "merged_prs": 12
+ },
+ {
+  "month": "2022-08",
+  "merged_mrs": 6,
+  "merged_prs": 32
+ },
+ {
+  "month": "2022-09",
+  "merged_mrs": 9,
+  "merged_prs": 14
+ },
+ {
+  "month": "2022-10",
+  "merged_mrs": 3,
+  "merged_prs": 35
+ },
+ {
+  "month": "2022-11",
+  "merged_mrs": 0,
+  "merged_prs": 84
+ },
+ {
+  "month": "2022-12",
+  "merged_mrs": 0,
+  "merged_prs": 93
+ },
+ {
+  "month": "2023-01",
+  "merged_mrs": 0,
+  "merged_prs": 57
+ },
+ {
+  "month": "2023-02",
+  "merged_mrs": 0,
+  "merged_prs": 59
+ },
+ {
+  "month": "2023-03",
+  "merged_mrs": 0,
+  "merged_prs": 60
+ },
+ {
+  "month": "2023-04",
+  "merged_mrs": 0,
+  "merged_prs": 49
+ },
+ {
+  "month": "2023-05",
+  "merged_mrs": 0,
+  "merged_prs": 61
+ },
+ {
+  "month": "2023-06",
+  "merged_mrs": 0,
+  "merged_prs": 58
+ },
+ {
+  "month": "2023-07",
+  "merged_mrs": 0,
+  "merged_prs": 52
+ },
+ {
+  "month": "2023-08",
+  "merged_mrs": 0,
+  "merged_prs": 68
+ },
+ {
+  "month": "2023-09",
+  "merged_mrs": 0,
+  "merged_prs": 32
+ },
+ {
+  "month": "2023-10",
+  "merged_mrs": 0,
+  "merged_prs": 61
+ },
+ {
+  "month": "2023-11",
+  "merged_mrs": 0,
+  "merged_prs": 36
+ },
+ {
+  "month": "2023-12",
+  "merged_mrs": 0,
+  "merged_prs": 15
+ },
+ {
+  "month": "2024-01",
+  "merged_mrs": 0,
+  "merged_prs": 43
+ },
+ {
+  "month": "2024-02",
+  "merged_mrs": 0,
+  "merged_prs": 46
+ },
+ {
+  "month": "2024-03",
+  "merged_mrs": 0,
+  "merged_prs": 21
+ },
+ {
+  "month": "2024-04",
+  "merged_mrs": 0,
+  "merged_prs": 46
+ },
+ {
+  "month": "2024-05",
+  "merged_mrs": 0,
+  "merged_prs": 49
+ },
+ {
+  "month": "2024-06",
+  "merged_mrs": 0,
+  "merged_prs": 28
+ },
+ {
+  "month": "2024-07",
+  "merged_mrs": 0,
+  "merged_prs": 40
+ },
+ {
+  "month": "2024-08",
+  "merged_mrs": 0,
+  "merged_prs": 28
+ },
+ {
+  "month": "2024-09",
+  "merged_mrs": 0,
+  "merged_prs": 37
+ },
+ {
+  "month": "2024-10",
+  "merged_mrs": 0,
+  "merged_prs": 30
+ },
+ {
+  "month": "2024-11",
+  "merged_mrs": 0,
+  "merged_prs": 24
+ },
+ {
+  "month": "2024-12",
+  "merged_mrs": 8,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-01",
+  "merged_mrs": 38,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-02",
+  "merged_mrs": 25,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-03",
+  "merged_mrs": 9,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-04",
+  "merged_mrs": 9,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-05",
+  "merged_mrs": 17,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-06",
+  "merged_mrs": 27,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-07",
+  "merged_mrs": 18,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-08",
+  "merged_mrs": 16,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-09",
+  "merged_mrs": 40,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-10",
+  "merged_mrs": 29,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-11",
+  "merged_mrs": 28,
+  "merged_prs": 0
+ },
+ {
+  "month": "2025-12",
+  "merged_mrs": 41,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-01",
+  "merged_mrs": 40,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-02",
+  "merged_mrs": 38,
+  "merged_prs": 1
+ },
+ {
+  "month": "2026-03",
+  "merged_mrs": 46,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-04",
+  "merged_mrs": 60,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-05",
+  "merged_mrs": 65,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-06",
+  "merged_mrs": 37,
+  "merged_prs": 1
+ },
+ {
+  "month": "2026-07",
+  "merged_mrs": 47,
+  "merged_prs": 2
+ },
+ {
+  "month": "2026-08",
+  "merged_mrs": 59,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-09",
+  "merged_mrs": 63,
+  "merged_prs": 0
+ },
+ {
+  "month": "2026-10",
+  "merged_mrs": 50,
+  "merged_prs": 0
+ }
+]

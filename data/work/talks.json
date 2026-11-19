@@ -1,0 +1,41 @@
+[
+ {
+  "event": "Google Atelierul Digital pentru Programatori",
+  "year": "2020 – 2023",
+  "title": "Flutter course trainer, 8 cohorts",
+  "kind": "Course"
+ },
+ {
+  "event": "GDG Baia Mare",
+  "year": "2019 – 2022",
+  "title": "Founded and ran the city's Google Developer Group: meetups, Flutter Engage and I/O Extended events",
+  "kind": "Community"
+ },
+ {
+  "event": "Flutter Festival Bucharest (GDG Bucharest)",
+  "year": 2022,
+  "title": "Flutter Qwik Start",
+  "kind": "Talk",
+  "url": "https://gdg.community.dev/events/details/google-gdg-bucharest-presents-flutter-festival-bucharest"
+ },
+ {
+  "event": "droidcon London",
+  "year": 2021,
+  "title": "Executing Dart code in background with Flutter",
+  "kind": "Conference talk · video",
+  "url": "https://www.youtube.com/watch?v=Ng7XRitr5oE"
+ },
+ {
+  "event": "Flutter Warsaw #11 (online)",
+  "year": 2020,
+  "title": "What the Flutter! Or what makes it so performant",
+  "kind": "Talk and panel",
+  "url": "https://www.meetup.com/flutter-warsaw/events/268796925/"
+ },
+ {
+  "event": "Coding Coach",
+  "year": 2019,
+  "title": "Free Flutter mentoring; one mentee joined our team four months later",
+  "kind": "Mentoring"
+ }
+]
